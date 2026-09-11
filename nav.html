@@ -1,0 +1,197 @@
+<!-- Shared Navigation Component -->
+<header
+    class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition duration-150 ease-in-out relative"
+    id="main-header"
+>
+    <div
+        class="w-full max-w-7xl mx-auto px-gutter-desktop flex items-center justify-between h-20"
+    >
+        <!-- Brand & Crest -->
+        <a
+            class="flex items-center gap-space-md group"
+            href="index.html"
+            aria-label="Amani International Academy Home"
+        >
+            <img
+                alt="Amani Academy Crest"
+                class="h-12 w-12 object-contain rounded-lg border border-outline-variant/40 shadow-xs group-hover:border-secondary transition-colors"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1WsFf37w9E7KYy7t8mv7gz4427dheZn4JGrFx6ZMGEZLEvYwwGMZeCBehyhSZ_a6JGvyH82QICqzHZoL7yFFhT8mOh2dOwawarvr3v7WhPyUsKfZIV2cs1KMlr-GTG6vuHFZOmJzsjr5Pnefz5E1v71RZcwylHBOFrXKaxFNMMB7jybNXHkpgrgyLrWVUYmmwmgdtHQiF0FoopCbIO0bcy5JhNv42_GPzEXCGSCBxAMuZBkDGMNNzDlSms"
+            />
+            <div class="flex flex-col">
+                <span
+                    class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold leading-none"
+                    >Amani International Academy</span
+                >
+                <span
+                    class="font-label-caps text-[10px] text-secondary tracking-widest mt-1"
+                    >Karen · Nairobi · Established 1999</span
+                >
+            </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav
+            class="hidden lg:flex items-center space-x-space-lg font-body-md text-body-md"
+            id="desktop-nav"
+            aria-label="Main navigation"
+        >
+            <a
+                class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-150 py-1"
+                href="index.html#about"
+                >About</a
+            >
+            <a
+                class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-150 py-1"
+                href="academics.html"
+                >Academics</a
+            >
+            <a
+                class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-150 py-1"
+                href="student_life.html"
+                >Student Life</a
+            >
+            <a
+                class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-150 py-1"
+                href="admission.html"
+                >Admissions</a
+            >
+            <a
+                class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-150 py-1"
+                href="campus.html"
+                >Campus</a
+            >
+            <a
+                class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-150 py-1"
+                href="news.html"
+                >News</a
+            >
+        </nav>
+
+        <!-- Trailing Action Cluster -->
+        <div class="flex items-center space-x-space-md">
+            <a
+                class="p-2 text-on-surface-variant hover:text-secondary transition-colors"
+                title="Academic Calendar"
+                aria-label="Academic Calendar"
+                href="school_calendar.html"
+                id="calendar-link"
+            >
+                <span class="material-symbols-outlined">calendar_today</span>
+            </a>
+
+            <button
+                type="button"
+                class="p-2 text-on-surface-variant hover:text-secondary transition-colors lg:hidden"
+                id="mobile-menu-btn"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="mobile-menu"
+            >
+                <span
+                    class="material-symbols-outlined text-[28px]"
+                    id="mobile-menu-icon"
+                    >menu</span
+                >
+            </button>
+
+            <a
+                class="hidden sm:inline-flex items-center justify-center bg-primary-container text-surface-container-lowest px-space-lg py-2.5 rounded-lg font-label-md text-label-md tracking-wider hover:bg-primary transition-all duration-200 border-b-2 border-secondary shadow-sm hover:shadow"
+                href="book_tour.html"
+            >
+                Book a School Tour
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <!-- Mobile Navigation Menu -->
+    <div
+        class="lg:hidden absolute top-full left-0 right-0 z-40 bg-background border-b border-outline-variant/30 shadow-lg transform -translate-y-4 opacity-0 invisible transition-all duration-300 ease-out max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain"
+        id="mobile-menu"
+        aria-hidden="true"
+    >
+        <div class="flex flex-col max-w-7xl mx-auto min-h-0">
+            <!-- Mobile Menu Header -->
+            <div
+                class="flex items-center justify-between p-4 border-b border-outline-variant/30"
+            >
+                <span
+                    id="mobile-menu-title"
+                    class="font-headline-sm text-headline-sm text-primary"
+                    >Menu</span
+                >
+                <button
+                    type="button"
+                    class="p-2 text-on-surface-variant hover:text-secondary transition-colors"
+                    id="mobile-menu-close"
+                    aria-label="Close menu"
+                >
+                    <span class="material-symbols-outlined text-[28px]"
+                        >close</span
+                    >
+                </button>
+            </div>
+
+            <!-- Mobile Nav Links -->
+            <nav class="py-4 px-4 space-y-1" aria-label="Mobile navigation">
+                <a
+                    class="block py-3 px-2 text-on-surface font-body-lg text-body-lg hover:text-secondary transition-colors border-b border-outline-variant/20"
+                    href="index.html#about"
+                    >About</a
+                >
+                <a
+                    class="block py-3 px-2 text-on-surface font-body-lg text-body-lg hover:text-secondary transition-colors border-b border-outline-variant/20"
+                    href="academics.html"
+                    >Academics</a
+                >
+                <a
+                    class="block py-3 px-2 text-on-surface font-body-lg text-body-lg hover:text-secondary transition-colors border-b border-outline-variant/20"
+                    href="student_life.html"
+                    >Student Life</a
+                >
+                <a
+                    class="block py-3 px-2 text-on-surface font-body-lg text-body-lg hover:text-secondary transition-colors border-b border-outline-variant/20"
+                    href="admission.html"
+                    >Admissions</a
+                >
+                <a
+                    class="block py-3 px-2 text-on-surface font-body-lg text-body-lg hover:text-secondary transition-colors border-b border-outline-variant/20"
+                    href="campus.html"
+                    >Campus</a
+                >
+                <a
+                    class="block py-3 px-2 text-on-surface font-body-lg text-body-lg hover:text-secondary transition-colors border-b border-outline-variant/20"
+                    href="news.html"
+                    >News</a
+                >
+            </nav>
+
+            <!-- Mobile Actions -->
+            <div class="p-4 border-t border-outline-variant/30 space-y-3">
+                <a
+                    class="w-full flex items-center justify-between py-3 px-2 text-on-surface font-body-lg text-body-lg hover:text-secondary transition-colors"
+                    href="school_calendar.html"
+                >
+                    <span>School Calendar</span>
+                    <span class="material-symbols-outlined"
+                        >calendar_today</span
+                    >
+                </a>
+
+                <a
+                    class="w-full inline-flex items-center justify-center bg-primary-container text-surface-container-lowest px-6 py-3.5 rounded-lg font-label-md text-label-md tracking-wider hover:bg-primary transition-all duration-200 border-b-2 border-secondary shadow-sm hover:shadow"
+                    href="book_tour.html"
+                >
+                    <span>Book a School Tour</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="fixed inset-0 z-30 bg-black/50 opacity-0 invisible transition-all duration-300 lg:hidden"
+        id="mobile-menu-overlay"
+        aria-hidden="true"
+    ></div>
+</header>

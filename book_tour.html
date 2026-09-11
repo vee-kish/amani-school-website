@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book a Campus Tour &amp; Experience | Amani International Academy, Karen, Nairobi</title>
+<!-- Fonts: Newsreader (Editorial Serif) & Manrope (Modern Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-fixed-dim": "#abcfb9",
+            "secondary": "#775a00",
+            "surface-dim": "#d3dcd6",
+            "on-primary-fixed": "#002113",
+            "tertiary-fixed-dim": "#ccc6b6",
+            "on-error": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-background": "#151d19",
+            "surface-variant": "#dce5de",
+            "surface-container-highest": "#dce5de",
+            "background": "#f3fcf5",
+            "primary-fixed": "#c7ebd4",
+            "tertiary-fixed": "#e9e2d1",
+            "on-tertiary-container": "#9a9485",
+            "inverse-on-surface": "#eaf3ec",
+            "on-secondary": "#ffffff",
+            "surface-container": "#e7f0e9",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#1e1c11",
+            "inverse-primary": "#abcfb9",
+            "on-secondary-fixed-variant": "#5a4300",
+            "surface-container-low": "#edf6ef",
+            "error-container": "#ffdad6",
+            "on-surface": "#151d19",
+            "surface": "#f3fcf5",
+            "primary": "#001e11",
+            "secondary-container": "#fed269",
+            "on-primary": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#7a9c88",
+            "on-secondary-container": "#765900",
+            "secondary-fixed": "#ffdf99",
+            "outline": "#727973",
+            "on-surface-variant": "#424844",
+            "surface-tint": "#456554",
+            "secondary-fixed-dim": "#ecc15a",
+            "on-tertiary-fixed-variant": "#4a473a",
+            "surface-container-high": "#e2eae4",
+            "on-primary-fixed-variant": "#2e4d3d",
+            "tertiary": "#1b180e",
+            "inverse-surface": "#2a322e",
+            "on-secondary-fixed": "#251a00",
+            "primary-container": "#133324",
+            "tertiary-container": "#302d22",
+            "surface-bright": "#f3fcf5",
+            "outline-variant": "#c1c8c2",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xs": "0.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter-tablet": "1.5rem",
+            "space-3xs": "0.125rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2rem",
+            "space-4xl": "6rem",
+            "space-2xl": "3rem",
+            "margin-desktop": "5rem",
+            "space-sm": "0.75rem",
+            "space-5xl": "8rem",
+            "space-lg": "1.5rem",
+            "space-2xs": "0.25rem",
+            "space-3xl": "4rem",
+            "space-md": "1rem",
+            "gutter-desktop": "2.5rem",
+            "margin-tablet": "2.5rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": ["Newsreader", "serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "label-caps": ["Manrope", "sans-serif"],
+            "headline-sm": ["Newsreader", "serif"],
+            "headline-lg": ["Newsreader", "serif"],
+            "label-md": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "title-md": ["Manrope", "sans-serif"],
+            "title-sm": ["Manrope", "sans-serif"],
+            "display-hero": ["Newsreader", "serif"],
+            "quote-editorial": ["Newsreader", "serif"]
+          },
+          "fontSize": {
+            "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "title-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "title-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "quote-editorial": ["22px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-shadow-academic {
+      box-shadow: 0 16px 36px -12px rgba(11, 32, 22, 0.08), 0 4px 12px -4px rgba(11, 32, 22, 0.03);
+    }
+    .paper-border {
+      border: 1px solid rgba(19, 51, 36, 0.08);
+    }
+  </style>
+  <script src="navigation.js"></script>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col">
+<!-- Shared Navigation -->
+<div id="nav-placeholder"></div>
+
+<script>
+  fetch("nav.html")
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("nav-placeholder").innerHTML = html;
+      window.dispatchEvent(new CustomEvent("amaniNavLoaded"));
+    });
+</script>
+<!-- ==================== HERO & EDITORIAL ARCHITECTURE ==================== -->
+<section class="relative pt-space-2xl pb-space-3xl overflow-hidden bg-surface-container-low border-b border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<!-- Top Eyebrow Chip & Breadcrumbs -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container border border-outline-variant/60 text-primary">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">Private &amp; Group Delegations · 2026/2027 Admissions</span>
+</div>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-on-surface-variant">
+<span>Karen Campus</span>
+<span>/</span>
+<span class="text-secondary font-semibold">Campus Visit Protocol</span>
+</div>
+</div>
+<!-- Asymmetric Editorial Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- Left Column: Narrative (7 Cols) -->
+<div class="lg:col-span-7">
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight mb-6">
+            Experience the Karen Sanctuary in Person.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mb-8">
+            Walk our 45-acre indigenous acacia canopy, explore cutting-edge biotech and robotics pavilions, sit in on Harkness seminars, and experience boarding house life alongside student ambassadors and senior faculty.
+          </p>
+<!-- Quick Tour Facts Bar (Tonal Parchment Strip) -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-surface-container-lowest paper-border custom-shadow-academic">
+<div class="border-r border-outline-variant/30 last:border-0 pr-3">
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Duration</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">60–90 Min</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Guided Walk</span>
+</div>
+<div class="border-r border-outline-variant/30 last:border-0 pr-3">
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Scale</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">Small Cohorts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Max 4 Families</span>
+</div>
+<div class="border-r border-outline-variant/30 last:border-0 pr-3">
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Leadership</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">Dean Escorts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">&amp; Student Prefects</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Rhythm</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">Tue, Thu, Sat</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Morning &amp; Salon</span>
+</div>
+</div>
+<div class="mt-8 flex flex-wrap items-center gap-4">
+<a class="px-6 py-3.5 rounded-lg bg-primary-container text-surface hover:bg-primary font-title-sm text-title-sm font-semibold transition-all inline-flex items-center gap-2 border border-secondary/40 shadow-sm" href="#booking-engine">
+<span>Configure Your Delegation</span>
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</a>
+<a class="px-6 py-3.5 rounded-lg bg-transparent text-primary hover:bg-surface-container font-title-sm text-title-sm font-semibold transition-all inline-flex items-center gap-2 border border-primary/20" href="#itinerary">
+<span>View Sample Morning Itinerary</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Tactile Visual Artefact (5 Cols) -->
+<div class="lg:col-span-5">
+<div class="relative rounded-2xl overflow-hidden paper-border custom-shadow-academic group bg-surface-container">
+<div class="aspect-[4/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out" data-alt="Modern African international school students collaborating in a sun-drenched architectural robotics and biotech workshop in Karen Nairobi. High ceilings with floor-to-ceiling glass windows look out onto indigenous acacia woodland. Students in sophisticated navy and cream school blazers are actively calibrating a robotic arm with laptops, microcontrollers, and circuit boards on heavy oak worktables. Warm natural morning sunlight, refined cinematic atmosphere with subtle brass accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd2rgW5AHh56orWmw8oEJFVY9e8Ga3nHbyBbFDsRsS4XT5zaQI1V6gHyWDy8jbIF-eHMTrcIot-561rElEz3b8LCA57zDkeoFxXwSx1XD48EjqUw4Ioz3rcfTAVCBghLH0hNjGI7tWW2Z8l5I6EfKHFLOhmRAClZJ6OOLNtL6MVUCV0XcycMi2415Zn0plzccZpHSW78XC0fPwxPABeobNfS_-bB4aLlOYiYiViITpe7TaQ59nr4ju"/>
+</div>
+<div class="p-5 bg-surface-container-lowest border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-0.5">Turing-Wangari STEAM Wing</span>
+<p class="font-title-sm text-title-sm text-primary font-semibold">Live Robotics &amp; Biotech Pavilions</p>
+</div>
+<span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== TOUR TYPE SELECTOR ==================== -->
+<section class="py-space-3xl bg-background border-b border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-2">Curated Pathways</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-3">
+          Select Your Family's Tour Itinerary
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Every child's scholastic path is singular. Select an itinerary tailored to your child’s anticipated year of entry and intellectual interests.
+        </p>
+</div>
+<!-- Segmented Interactive Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="tour-itinerary-selector">
+<!-- Option A -->
+<div class="itinerary-card cursor-pointer p-6 rounded-xl bg-surface-container-lowest paper-border hover:border-primary transition-all duration-200 relative flex flex-col justify-between border-2 border-primary ring-2 ring-primary/10" onclick="selectItinerary('General Campus &amp; Academic Discovery', this)">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">01</span>
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-caps text-label-caps text-primary font-bold">Ages 3–18</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">General Campus &amp; Academic Discovery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Comprehensive overview across all divisions. Covers early years through Sixth Form, STEAM hubs, modern library commons, and high tea in the Karen pavilion.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between font-label-md text-label-md text-primary font-semibold">
+<span>Selected Default</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+</div>
+<!-- Option B -->
+<div class="itinerary-card cursor-pointer p-6 rounded-xl bg-surface-container-lowest paper-border hover:border-primary transition-all duration-200 relative flex flex-col justify-between border-2 border-transparent" onclick="selectItinerary('Sixth Form &amp; IB Diploma Scholarly Residency', this)">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">02</span>
+<span class="px-2.5 py-1 rounded bg-secondary-fixed/40 font-label-caps text-label-caps text-on-secondary-fixed font-bold">Years 12–13</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">Sixth Form &amp; IB Diploma Scholarly Residency</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Specialized science labs, university matriculation salon with college counselors, residential boarding suites, and Harkness round-table observation.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Select Itinerary</span>
+<span class="material-symbols-outlined text-[20px]">radio_button_unchecked</span>
+</div>
+</div>
+<!-- Option C -->
+<div class="itinerary-card cursor-pointer p-6 rounded-xl bg-surface-container-lowest paper-border hover:border-primary transition-all duration-200 relative flex flex-col justify-between border-2 border-transparent" onclick="selectItinerary('Junior &amp; Primary Forest Explorers', this)">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">03</span>
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-caps text-label-caps text-primary font-bold">Ages 3–11</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">Junior &amp; Primary Forest Explorers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Reggio-inspired outdoor learning pavilion, junior music conservatory, natural amphitheater, athletics track, and organic permaculture learning gardens.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Select Itinerary</span>
+<span class="material-symbols-outlined text-[20px]">radio_button_unchecked</span>
+</div>
+</div>
+<!-- Option D -->
+<div class="itinerary-card cursor-pointer p-6 rounded-xl bg-surface-container-lowest paper-border hover:border-primary transition-all duration-200 relative flex flex-col justify-between border-2 border-transparent" onclick="selectItinerary('Virtual Immersive Delegation', this)">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">04</span>
+<span class="px-2.5 py-1 rounded bg-tertiary-fixed font-label-caps text-label-caps text-on-tertiary-fixed font-bold">Global / Online</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">Virtual Immersive Delegation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              360° live telepresence walk conducted directly by the Admissions Dean for international and Pan-African diaspora families residing outside Nairobi.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Select Itinerary</span>
+<span class="material-symbols-outlined text-[20px]">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== INTERACTIVE TOUR BOOKING ENGINE ==================== -->
+<section class="py-space-3xl bg-surface-container-low scroll-mt-24" id="booking-engine">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-6 border-b border-outline-variant/40">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-1">Admissions Concierge</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Reserve Your Visit Delegation</h2>
+</div>
+<div class="mt-4 md:mt-0 flex items-center gap-3 text-body-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Dean’s Host Registry Open for Term 1 &amp; 2 Admissions</span>
+</div>
+</div>
+<!-- Main Booking Interface: 2 Columns (Form left 7 cols, Live Summary right 5 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Side: Interactive Multi-Step Configuration (7 Cols) -->
+<div class="lg:col-span-7 space-y-8 bg-surface-container-lowest p-8 rounded-2xl paper-border custom-shadow-academic">
+<!-- STEP 1: Tour Format -->
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-6 rounded-full bg-primary text-surface font-label-caps flex items-center justify-center text-xs">1</span>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Select Tour Format</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="tour_format" onchange="updateSummary()" type="radio" value="In-Person Private Tour"/>
+<div class="p-3.5 rounded-lg border border-outline-variant/60 bg-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary transition-all">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold">Private Tour</span>
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<span class="text-[12px] opacity-80 block leading-tight">Bespoke 1-on-1 walk with leadership</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="tour_format" onchange="updateSummary()" type="radio" value="Saturday Morning Salon"/>
+<div class="p-3.5 rounded-lg border border-outline-variant/60 bg-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary transition-all">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold">Saturday Salon</span>
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<span class="text-[12px] opacity-80 block leading-tight">Small cohort (Max 4 families)</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="tour_format" onchange="updateSummary()" type="radio" value="Virtual Live Delegation"/>
+<div class="p-3.5 rounded-lg border border-outline-variant/60 bg-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary transition-all">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold">Virtual Walk</span>
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+</div>
+<span class="text-[12px] opacity-80 block leading-tight">Interactive 360° telepresence</span>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 2: Date & Slot Picker -->
+<div class="pt-6 border-t border-outline-variant/30">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-surface font-label-caps flex items-center justify-center text-xs">2</span>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Choose Preferred Date &amp; Time Slot</h3>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold">East Africa Time (UTC+3)</span>
+</div>
+<!-- Calendar Horizontal Quick Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-4">
+<button class="date-btn p-3 rounded-lg border text-left transition-all border-primary bg-primary-container text-surface" onclick="selectDate(this, 'Thu, 24 Oct 2025')" type="button">
+<span class="font-label-caps text-[10px] block opacity-80 uppercase">Thursday</span>
+<span class="font-title-md text-title-md font-bold block">Oct 24</span>
+<span class="text-[11px] text-secondary-fixed block font-medium mt-1">2 slots open</span>
+</button>
+<button class="date-btn p-3 rounded-lg border text-left transition-all border-outline-variant/60 bg-surface hover:bg-surface-container text-primary" onclick="selectDate(this, 'Sat, 26 Oct 2025')" type="button">
+<span class="font-label-caps text-[10px] block text-on-surface-variant uppercase">Saturday</span>
+<span class="font-title-md text-title-md font-bold block">Oct 26</span>
+<span class="text-[11px] text-secondary block font-medium mt-1">Open Salon</span>
+</button>
+<button class="date-btn p-3 rounded-lg border text-left transition-all border-outline-variant/60 bg-surface hover:bg-surface-container text-primary" onclick="selectDate(this, 'Tue, 29 Oct 2025')" type="button">
+<span class="font-label-caps text-[10px] block text-on-surface-variant uppercase">Tuesday</span>
+<span class="font-title-md text-title-md font-bold block">Oct 29</span>
+<span class="text-[11px] text-secondary block font-medium mt-1">3 slots open</span>
+</button>
+<button class="date-btn p-3 rounded-lg border text-left transition-all border-outline-variant/60 bg-surface hover:bg-surface-container text-primary" onclick="selectDate(this, 'Thu, 31 Oct 2025')" type="button">
+<span class="font-label-caps text-[10px] block text-on-surface-variant uppercase">Thursday</span>
+<span class="font-title-md text-title-md font-bold block">Oct 31</span>
+<span class="text-[11px] text-secondary block font-medium mt-1">Few spots left</span>
+</button>
+</div>
+<!-- Time Slot Radios -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="time_slot" onchange="updateSummary()" type="radio" value="Morning Session (09:30 – 11:30 EAT)"/>
+<div class="p-3 rounded-lg border border-outline-variant/60 bg-surface peer-checked:bg-surface-container peer-checked:border-primary flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">light_mode</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">Morning Session</span>
+<span class="text-body-sm text-on-surface-variant block">09:30 – 11:30 EAT (High Tea)</span>
+</div>
+</div>
+<span class="w-3.5 h-3.5 rounded-full border-2 border-outline peer-checked:border-primary peer-checked:bg-primary"></span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="time_slot" onchange="updateSummary()" type="radio" value="Afternoon Session (14:00 – 16:00 EAT)"/>
+<div class="p-3 rounded-lg border border-outline-variant/60 bg-surface peer-checked:bg-surface-container peer-checked:border-primary flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_twilight</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">Afternoon Session</span>
+<span class="text-body-sm text-on-surface-variant block">14:00 – 16:00 EAT (Sports Watch)</span>
+</div>
+</div>
+<span class="w-3.5 h-3.5 rounded-full border-2 border-outline"></span>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 3: Academic Division of Interest -->
+<div class="pt-6 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-6 rounded-full bg-primary text-surface font-label-caps flex items-center justify-center text-xs">3</span>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Grade / Academic Division of Interest</h3>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+<button class="div-btn px-3 py-2 rounded-lg border border-outline-variant/60 text-center font-body-sm text-on-surface hover:bg-surface-container transition-all" onclick="selectDivision(this, 'Early Years (Ages 3–5)')" type="button">
+                Early Years
+              </button>
+<button class="div-btn px-3 py-2 rounded-lg border border-outline-variant/60 text-center font-body-sm text-on-surface hover:bg-surface-container transition-all" onclick="selectDivision(this, 'Junior Prep (Years 1–6)')" type="button">
+                Junior Prep
+              </button>
+<button class="div-btn px-3 py-2 rounded-lg border border-outline-variant/60 text-center font-body-sm text-on-surface hover:bg-surface-container transition-all" onclick="selectDivision(this, 'Middle IGCSE (Years 7–11)')" type="button">
+                Middle IGCSE
+              </button>
+<button class="div-btn px-3 py-2 rounded-lg border border-primary bg-primary-container text-surface text-center font-body-sm font-semibold transition-all" onclick="selectDivision(this, 'Sixth Form IB Diploma')" type="button">
+                Sixth Form IB
+              </button>
+</div>
+</div>
+<!-- STEP 4: Tailored Tour Highlights / Special Interests -->
+<div class="pt-6 border-t border-outline-variant/30">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-surface font-label-caps flex items-center justify-center text-xs">4</span>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Tailored Highlights &amp; Campus Stops</h3>
+</div>
+<span class="font-body-sm text-on-surface-variant text-xs">Select all that apply</span>
+</div>
+<div class="flex flex-wrap gap-2" id="interest-pills">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="interest" onchange="updateSummary()" type="checkbox" value="Biotech &amp; Turing-Wangari STEAM"/>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-body-sm transition-all border-primary bg-primary-container text-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+                  Biotech &amp; Robotics Lab
+                </span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="interest" onchange="updateSummary()" type="checkbox" value="Boarding &amp; Pastoral Life"/>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-body-sm transition-all border-outline-variant/60 bg-surface text-on-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary">
+<span class="material-symbols-outlined text-[16px]">bed</span>
+                  Boarding Suites &amp; Pastoral Care
+                </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="interest" onchange="updateSummary()" type="checkbox" value="Olympic Pool &amp; Sports Pavilions"/>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-body-sm transition-all border-outline-variant/60 bg-surface text-on-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary">
+<span class="material-symbols-outlined text-[16px]">sports_tennis</span>
+                  Equestrian &amp; Sports Complex
+                </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="interest" onchange="updateSummary()" type="checkbox" value="Conservatory of Music &amp; Arts"/>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-body-sm transition-all border-outline-variant/60 bg-surface text-on-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary">
+<span class="material-symbols-outlined text-[16px]">music_note</span>
+                  Music &amp; Performing Arts
+                </span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="interest" onchange="updateSummary()" type="checkbox" value="Dean / Head of School Consultation"/>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-body-sm transition-all border-outline-variant/60 bg-surface text-on-surface peer-checked:bg-primary-container peer-checked:text-surface peer-checked:border-primary">
+<span class="material-symbols-outlined text-[16px]">person</span>
+                  Meet Head of School
+                </span>
+</label>
+</div>
+</div>
+<!-- STEP 5: Prospective Family Details -->
+<div class="pt-6 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-6 h-6 rounded-full bg-primary text-surface font-label-caps flex items-center justify-center text-xs">5</span>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Prospective Family Details</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant block mb-1">Parent / Guardian Full Name</label>
+<input class="w-full px-3.5 py-2.5 bg-surface border border-outline-variant/70 rounded-lg text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="parent-name" oninput="updateSummary()" placeholder="e.g. Dr. Kiptoo / Hon. Mwangi" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant block mb-1">Student Name &amp; Current Age</label>
+<input class="w-full px-3.5 py-2.5 bg-surface border border-outline-variant/70 rounded-lg text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="student-name" oninput="updateSummary()" placeholder="e.g. Zawadi Mwangi, 16 yrs" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant block mb-1">Contact Email</label>
+<input class="w-full px-3.5 py-2.5 bg-surface border border-outline-variant/70 rounded-lg text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="name@domain.com" type="email"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant block mb-1">WhatsApp / Phone with Country Code</label>
+<input class="w-full px-3.5 py-2.5 bg-surface border border-outline-variant/70 rounded-lg text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="+254 7XX XXX XXX / +44 ..." type="tel"/>
+</div>
+<div class="sm:col-span-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant block mb-1">Dietary Preferences / High Tea Notes</label>
+<input class="w-full px-3.5 py-2.5 bg-surface border border-outline-variant/70 rounded-lg text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="e.g. Vegetarian, Swahili spices preferred, Halal, Nut allergies" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Sticky Live Booking Summary Dossier (5 Cols) -->
+<div class="lg:col-span-5 sticky top-28">
+<div class="bg-primary-container text-surface rounded-2xl p-7 border border-secondary/30 custom-shadow-academic relative overflow-hidden">
+<!-- Subtle Watermark Crest -->
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full border-8 border-secondary/10 pointer-events-none"></div>
+<div class="flex items-center justify-between pb-5 border-b border-surface-container-highest/20 mb-6">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-widest block font-bold">AIA Karen · Official Dossier</span>
+<h3 class="font-headline-sm text-headline-sm text-surface">Delegation Summary</h3>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed text-[28px]">verified</span>
+</div>
+<!-- Dynamic Fields -->
+<div class="space-y-4 mb-6 text-body-sm">
+<div class="flex justify-between py-2 border-b border-surface-container-highest/15">
+<span class="text-on-primary-container">Itinerary Pathway</span>
+<span class="font-medium text-right text-surface font-title-sm text-title-sm" id="summary-itinerary">General Academic Discovery</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-highest/15">
+<span class="text-on-primary-container">Format &amp; Mode</span>
+<span class="font-medium text-right text-surface" id="summary-format">In-Person Private Tour</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-highest/15">
+<span class="text-on-primary-container">Reserved Date</span>
+<span class="font-medium text-right text-secondary-fixed font-semibold" id="summary-date">Thu, 24 Oct 2025</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-highest/15">
+<span class="text-on-primary-container">Session Time</span>
+<span class="font-medium text-right text-surface" id="summary-slot">09:30 – 11:30 EAT</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-highest/15">
+<span class="text-on-primary-container">Academic Division</span>
+<span class="font-medium text-right text-surface" id="summary-division">Sixth Form IB Diploma</span>
+</div>
+<div class="py-2 border-b border-surface-container-highest/15">
+<span class="text-on-primary-container block mb-1.5">Specialized Highlights Added:</span>
+<div class="flex flex-wrap gap-1.5" id="summary-highlights">
+<span class="text-[11px] bg-surface/10 px-2 py-0.5 rounded text-surface-variant">Biotech &amp; Robotics</span>
+<span class="text-[11px] bg-surface/10 px-2 py-0.5 rounded text-surface-variant">Boarding Suites</span>
+<span class="text-[11px] bg-surface/10 px-2 py-0.5 rounded text-surface-variant">Head of School</span>
+</div>
+</div>
+<div class="flex justify-between py-2">
+<span class="text-on-primary-container">Delegation Lead:</span>
+<span class="font-medium text-right text-secondary-fixed" id="summary-parent">Dr. / Family Visitor</span>
+</div>
+</div>
+<!-- Assigned Protocol Officer -->
+<div class="p-3.5 rounded-xl bg-surface/5 border border-surface/10 mb-6 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center">
+                AO
+              </div>
+<div class="text-xs">
+<span class="font-semibold block text-surface">Host: Mrs. Amina Odhiambo</span>
+<span class="text-on-primary-container">Dean of Admissions &amp; African Scholar Initiatives</span>
+</div>
+</div>
+<!-- CTA Submission Button -->
+<button class="w-full py-4 rounded-lg bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-title-sm text-title-sm font-bold transition-all duration-150 flex items-center justify-center gap-2 shadow-lg" onclick="confirmBookingModal()" type="button">
+<span>Confirm Campus Reservation</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<span class="font-body-sm text-[11px] text-on-primary-container block text-center mt-2.5">
+              Instant diplomatic clearance badge generated upon submission.
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== INTERACTIVE TIMELINE / ITINERARY PREVIEW ==================== -->
+<section class="py-space-4xl bg-background border-b border-outline-variant/30" id="itinerary">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<div class="max-w-3xl mb-12">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-2">Pacing &amp; Hospitality</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4">
+          What Your Morning Looks Like
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Visits at Amani are deliberately unhurried, reflecting the contemplative tranquility of our Karen sanctuary and our respect for thoughtful familial dialogue.
+        </p>
+</div>
+<!-- Chronological Timeline Modules -->
+<div class="relative pl-6 md:pl-10 border-l-2 border-secondary/30 space-y-12">
+<!-- Step 1 -->
+<div class="relative group">
+<div class="absolute -left-[31px] md:-left-[47px] top-0 w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">coffee</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-surface-container-lowest p-6 rounded-xl paper-border group-hover:border-primary transition-all">
+<div class="md:col-span-3">
+<span class="font-headline-sm text-headline-sm text-primary font-medium block">09:30 EAT</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase">The Karen Pavilion</span>
+</div>
+<div class="md:col-span-9">
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">Welcome High Tea &amp; Swahili Pastries</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Meet Admissions Dean Mrs. Amina Odhiambo over single-origin Kenyan highland coffees, organic herbal infusions, and fresh mahamri pastries while reviewing your child’s educational dossier.
+              </p>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative group">
+<div class="absolute -left-[31px] md:-left-[47px] top-0 w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">school</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-surface-container-lowest p-6 rounded-xl paper-border group-hover:border-primary transition-all">
+<div class="md:col-span-3">
+<span class="font-headline-sm text-headline-sm text-primary font-medium block">10:00 EAT</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase">Academic Pavilions</span>
+</div>
+<div class="md:col-span-9">
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">The Scholarly Walk &amp; Live Classes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Observe Harkness discussions in session, visit the Turing-Wangari Biotech Laboratories, and see how our dual Cambridge/IB curriculum stimulates analytical inquiry across sciences and humanities.
+              </p>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative group">
+<div class="absolute -left-[31px] md:-left-[47px] top-0 w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">palette</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-surface-container-lowest p-6 rounded-xl paper-border group-hover:border-primary transition-all">
+<div class="md:col-span-3">
+<span class="font-headline-sm text-headline-sm text-primary font-medium block">10:45 EAT</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase">Creative &amp; Sports Wing</span>
+</div>
+<div class="md:col-span-9">
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">Arts, Athletics &amp; Equestrian Grounds</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Tour the 400-seat amphitheater, orchestral suites, heated 25m competitive pool, all-weather athletics track, and adjacent Karen Country Club equestrian partnerships.
+              </p>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative group">
+<div class="absolute -left-[31px] md:-left-[47px] top-0 w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">cottage</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-surface-container-lowest p-6 rounded-xl paper-border group-hover:border-primary transition-all">
+<div class="md:col-span-3">
+<span class="font-headline-sm text-headline-sm text-primary font-medium block">11:15 EAT</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase">Pastoral Living</span>
+</div>
+<div class="md:col-span-9">
+<h3 class="font-title-md text-title-md text-primary font-semibold mb-2">Kilimanjaro &amp; Serengeti Residential Houses</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Step inside student boarding quarters, tutor-supervised evening study wings, and common rooms. Meet live-in Housemasters to discuss pastoral care, nutrition, and weekend excursions.
+              </p>
+</div>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative group">
+<div class="absolute -left-[31px] md:-left-[47px] top-0 w-8 h-8 rounded-full bg-secondary text-surface flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-primary-container text-surface p-6 rounded-xl border border-secondary/30">
+<div class="md:col-span-3">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-medium block">11:45 EAT</span>
+<span class="font-label-caps text-label-caps text-on-primary-container font-bold uppercase">Dean’s Salon</span>
+</div>
+<div class="md:col-span-9">
+<h3 class="font-title-md text-title-md text-surface font-semibold mb-2">Private Family Consultation &amp; Admissions Q&amp;A</h3>
+<p class="font-body-md text-body-md text-surface-container-highest/90 leading-relaxed">
+                Conclude with an individualized admissions roadmapping discussion: scholarship assessment, global university placement targets, and student visa facilitation for international families.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CONCIERGE & KAREN ESTATE ACCESS ==================== -->
+<section class="py-space-3xl bg-surface-container-low border-b border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left: Concierge Desk -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-8 rounded-2xl paper-border custom-shadow-academic">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-2">Personal Assistance</span>
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight mb-4">Admissions Concierge &amp; Travel Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Visiting from outside Kenya or requiring airport transfers from Jomo Kenyatta International (JKIA) or Wilson Airport? Our concierge team coordinates private diplomatic security escorts and preferred boutique lodge bookings in Karen.
+          </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Direct Dean Line</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold">+254 (0) 20 889 0420</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Admissions WhatsApp (24/7)</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold">+254 712 345 678</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Delegation Secretariat</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold">admissions@amani-academy.ac.ke</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Karen Location & Security Clearance Badge -->
+<div class="lg:col-span-6 space-y-6">
+<div class="bg-surface-container-lowest p-7 rounded-2xl paper-border">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">shield</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold mb-1">Diplomatic &amp; UN-Standard Estate Security</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  The Karen campus is secured 24/7 under international diplomatic safety frameworks. All visiting family vehicles must be pre-manifested at the gatehouse at least 24 hours prior to arrival.
+                </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl border border-outline-variant/60 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[26px]">location_on</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">Amani Karen Sanctuary</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mbagathi Ridge, Karen, Nairobi, Kenya</span>
+</div>
+</div>
+<a class="px-4 py-2 rounded-lg bg-surface-container-lowest border border-outline-variant/80 font-body-sm font-semibold text-primary hover:bg-white transition-all" href="https://maps.google.com" target="_blank">
+              Google Maps Pin
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FREQUENTLY ASKED QUESTIONS (ACCORDION) ==================== -->
+<section class="py-space-3xl bg-background border-b border-outline-variant/30">
+<div class="w-full max-w-4xl mx-auto px-gutter-desktop">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-2">Protocol Clarifications</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Frequently Asked Questions Regarding Visits
+        </h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="border border-outline-variant/50 rounded-xl overflow-hidden bg-surface-container-lowest transition-all">
+<button class="w-full p-5 text-left flex items-center justify-between font-title-sm text-title-sm text-primary font-semibold hover:bg-surface-container/50" onclick="toggleFaq(this)">
+<span>Can my child attend and actively participate in classes during the visit?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="p-5 pt-0 text-body-md text-on-surface-variant leading-relaxed hidden">
+            Yes. Through our "Scholar for a Morning" immersion program, prospective students in Middle and Sixth Form may be paired with a student ambassador to sit in on a live Harkness English seminar, Advanced Robotics lab, or Economics symposium. Please notify us 48 hours in advance so our academic team can prepare proper credentials.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="border border-outline-variant/50 rounded-xl overflow-hidden bg-surface-container-lowest transition-all">
+<button class="w-full p-5 text-left flex items-center justify-between font-title-sm text-title-sm text-primary font-semibold hover:bg-surface-container/50" onclick="toggleFaq(this)">
+<span>What security protocols are in effect at the Mbagathi Ridge Karen Gate?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="p-5 pt-0 text-body-md text-on-surface-variant leading-relaxed hidden">
+            All campus entries are regulated strictly. Once you book your tour, our secretariat issues a QR-coded Campus Entry Dossier. Presenting this clearance pass and a valid national ID or diplomatic passport at the main security barrier allows seamless entry into the visitor pavilion parking grounds.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="border border-outline-variant/50 rounded-xl overflow-hidden bg-surface-container-lowest transition-all">
+<button class="w-full p-5 text-left flex items-center justify-between font-title-sm text-title-sm text-primary font-semibold hover:bg-surface-container/50" onclick="toggleFaq(this)">
+<span>Are weekend or evening appointments available for international visitors?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="p-5 pt-0 text-body-md text-on-surface-variant leading-relaxed hidden">
+            Yes. We host our Saturday Open Salons from 09:30 to 12:30 EAT twice monthly. For families flying directly from London, Dubai, or Johannesburg with tight arrival windows, our Dean of Admissions arranges private Sunday pastoral teas upon bespoke concierge request.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="border border-outline-variant/50 rounded-xl overflow-hidden bg-surface-container-lowest transition-all">
+<button class="w-full p-5 text-left flex items-center justify-between font-title-sm text-title-sm text-primary font-semibold hover:bg-surface-container/50" onclick="toggleFaq(this)">
+<span>What should visiting families wear and bring along?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="p-5 pt-0 text-body-md text-on-surface-variant leading-relaxed hidden">
+            We recommend comfortable smart-casual attire and walking shoes suitable for exploring our shaded indigenous forest paths and academic quads. You may bring your student's recent academic transcripts if you wish to review subject choices with the Dean of Studies during the concluding high tea.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CONFIRMATION MODAL (INTERACTIVE) ==================== -->
+<div class="fixed inset-0 z-50 bg-primary/80 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="booking-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl paper-border p-8 text-center shadow-2xl relative">
+<div class="w-16 h-16 rounded-full bg-primary-container text-secondary-fixed mx-auto flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[32px]">task_alt</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-widest block mb-1">Reservation Dossier Confirmed</span>
+<h3 class="font-headline-md text-headline-md text-primary font-medium mb-3">Welcome to Amani Academy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+        Your Karen campus reservation pass has been dispatched to your email and admissions WhatsApp. Our protocol officer will reach out within 4 business hours to finalize security clearance.
+      </p>
+<div class="p-4 rounded-xl bg-surface-container border border-outline-variant/40 mb-6 text-left text-body-sm space-y-1">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Gate Clearance Code:</span>
+<span class="font-mono font-bold text-primary">AIA-KRN-2026-9812</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Host Escort:</span>
+<span class="font-semibold text-primary">Dean Amina Odhiambo</span>
+</div>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary-container text-surface hover:bg-primary font-title-sm text-title-sm font-semibold transition-all" onclick="closeModal()">
+        Done &amp; Return to Overview
+      </button>
+</div>
+</div>
+<!-- ==================== MICRO-INTERACTIONS JAVASCRIPT ==================== -->
+<script>
+    // State Tracker
+    let selectedItineraryTitle = "General Campus & Academic Discovery";
+    let selectedDateVal = "Thu, 24 Oct 2025";
+    let selectedDivVal = "Sixth Form IB Diploma";
+
+    // 1. Itinerary Card Selection
+    function selectItinerary(name, cardEl) {
+      selectedItineraryTitle = name;
+      document.querySelectorAll('.itinerary-card').forEach(c => {
+        c.classList.remove('border-primary', 'ring-2', 'ring-primary/10');
+        c.classList.add('border-transparent');
+        const foot = c.querySelector('.border-t span:last-child');
+        const label = c.querySelector('.border-t span:first-child');
+        if (foot) {
+          foot.textContent = 'radio_button_unchecked';
+          foot.className = 'material-symbols-outlined text-[20px]';
+        }
+        if (label) label.textContent = 'Select Itinerary';
+      });
+
+      cardEl.classList.remove('border-transparent');
+      cardEl.classList.add('border-primary', 'ring-2', 'ring-primary/10');
+      const activeFoot = cardEl.querySelector('.border-t span:last-child');
+      const activeLabel = cardEl.querySelector('.border-t span:first-child');
+      if (activeFoot) {
+        activeFoot.textContent = 'check_circle';
+        activeFoot.className = 'material-symbols-outlined text-secondary text-[20px]';
+      }
+      if (activeLabel) activeLabel.textContent = 'Selected Default';
+
+      updateSummary();
+    }
+
+    // 2. Date Selection
+    function selectDate(btn, dateStr) {
+      selectedDateVal = dateStr;
+      document.querySelectorAll('.date-btn').forEach(b => {
+        b.className = 'date-btn p-3 rounded-lg border text-left transition-all border-outline-variant/60 bg-surface hover:bg-surface-container text-primary';
+      });
+      btn.className = 'date-btn p-3 rounded-lg border text-left transition-all border-primary bg-primary-container text-surface';
+      updateSummary();
+    }
+
+    // 3. Division Selection
+    function selectDivision(btn, divStr) {
+      selectedDivVal = divStr;
+      document.querySelectorAll('.div-btn').forEach(b => {
+        b.className = 'div-btn px-3 py-2 rounded-lg border border-outline-variant/60 text-center font-body-sm text-on-surface hover:bg-surface-container transition-all';
+      });
+      btn.className = 'div-btn px-3 py-2 rounded-lg border border-primary bg-primary-container text-surface text-center font-body-sm font-semibold transition-all';
+      updateSummary();
+    }
+
+    // 4. Update Live Booking Summary Card
+    function updateSummary() {
+      // Itinerary
+      const summItin = document.getElementById('summary-itinerary');
+      if (summItin) summItin.textContent = selectedItineraryTitle;
+
+      // Format
+      const formatChecked = document.querySelector('input[name="tour_format"]:checked');
+      if (formatChecked) {
+        document.getElementById('summary-format').textContent = formatChecked.value;
+      }
+
+      // Date
+      document.getElementById('summary-date').textContent = selectedDateVal;
+
+      // Slot
+      const slotChecked = document.querySelector('input[name="time_slot"]:checked');
+      if (slotChecked) {
+        document.getElementById('summary-slot').textContent = slotChecked.value.split('(')[1].replace(')', '');
+      }
+
+      // Division
+      document.getElementById('summary-division').textContent = selectedDivVal;
+
+      // Family Lead
+      const parentInput = document.getElementById('parent-name').value.trim();
+      const studentInput = document.getElementById('student-name').value.trim();
+      let displayName = "Prospective Family";
+      if (parentInput) {
+        displayName = parentInput;
+        if (studentInput) displayName += ` & ${studentInput.split(',')[0]}`;
+      }
+      document.getElementById('summary-parent').textContent = displayName;
+
+      // Highlights check pills
+      const checkedInterests = Array.from(document.querySelectorAll('input[name="interest"]:checked')).map(cb => cb.value);
+      const container = document.getElementById('summary-highlights');
+      if (container) {
+        if (checkedInterests.length === 0) {
+          container.innerHTML = '<span class="text-[11px] text-surface-variant/60 italic">Full standard academic campus loop</span>';
+        } else {
+          container.innerHTML = checkedInterests.map(i => `<span class="text-[11px] bg-surface/10 px-2 py-0.5 rounded text-surface-variant">${i}</span>`).join('');
+        }
+      }
+    }
+
+    // 5. Accordion FAQs
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      } else {
+        content.classList.add('hidden');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    // 6. Modal Interactions
+    function confirmBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.add('hidden');
+    }
+</script>
+
+<!-- Shared Footer -->
+<div id="footer-placeholder"></div>
+
+<script>
+  // Load shared footer
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
+
+<script src="main.js"></script>
+</body></html>

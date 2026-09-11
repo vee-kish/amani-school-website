@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Amani Chronicle | News &amp; Dispatches · Amani International Academy</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#c7ebd4",
+            "tertiary-container": "#302d22",
+            "background": "#f3fcf5",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#251a00",
+            "on-primary-fixed": "#002113",
+            "on-secondary-container": "#765900",
+            "on-surface": "#151d19",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#ccc6b6",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#2a322e",
+            "inverse-on-surface": "#eaf3ec",
+            "surface-container": "#e7f0e9",
+            "on-background": "#151d19",
+            "tertiary": "#1b180e",
+            "on-primary-container": "#7a9c88",
+            "outline": "#727973",
+            "on-tertiary-fixed-variant": "#4a473a",
+            "primary-container": "#133324",
+            "tertiary-fixed": "#e9e2d1",
+            "surface": "#f3fcf5",
+            "secondary-container": "#fed269",
+            "primary": "#001e11",
+            "error": "#ba1a1a",
+            "secondary": "#775a00",
+            "on-tertiary-container": "#9a9485",
+            "surface-tint": "#456554",
+            "surface-container-low": "#edf6ef",
+            "surface-dim": "#d3dcd6",
+            "surface-container-highest": "#dce5de",
+            "surface-bright": "#f3fcf5",
+            "on-primary-fixed-variant": "#2e4d3d",
+            "on-surface-variant": "#424844",
+            "inverse-primary": "#abcfb9",
+            "on-tertiary-fixed": "#1e1c11",
+            "secondary-fixed": "#ffdf99",
+            "on-primary": "#ffffff",
+            "primary-fixed-dim": "#abcfb9",
+            "surface-variant": "#dce5de",
+            "outline-variant": "#c1c8c2",
+            "on-secondary-fixed-variant": "#5a4300",
+            "surface-container-high": "#e2eae4",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#ecc15a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-5xl": "8rem",
+            "space-3xs": "0.125rem",
+            "space-sm": "0.75rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "gutter-desktop": "2.5rem",
+            "margin-tablet": "2.5rem",
+            "gutter-tablet": "1.5rem",
+            "space-2xs": "0.25rem",
+            "margin-desktop": "5rem",
+            "space-md": "1rem",
+            "space-xs": "0.5rem",
+            "space-4xl": "6rem",
+            "space-2xl": "3rem",
+            "gutter-mobile": "1rem",
+            "space-3xl": "4rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Newsreader", "serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "title-sm": ["Manrope", "sans-serif"],
+            "title-md": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "label-caps": ["Manrope", "sans-serif"],
+            "display-hero": ["Newsreader", "serif"],
+            "headline-sm": ["Newsreader", "serif"],
+            "label-md": ["Manrope", "sans-serif"],
+            "quote-editorial": ["Newsreader", "serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "display-hero-mobile": ["Newsreader", "serif"]
+          },
+          "fontSize": {
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "title-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "title-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "quote-editorial": ["22px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .editorial-border {
+      border-color: rgba(19, 51, 36, 0.12);
+    }
+    .parchment-wash {
+      background: radial-gradient(circle at 50% 0%, #ffffff 0%, #f3fcf5 80%);
+    }
+  </style>
+  <script src="navigation.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Shared Navigation -->
+<div id="nav-placeholder"></div>
+
+<script>
+  fetch("nav.html")
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("nav-placeholder").innerHTML = html;
+      window.dispatchEvent(new CustomEvent("amaniNavLoaded"));
+    });
+</script>
+<!-- Chronicle Masthead / Hero Section -->
+<section class="parchment-wash border-b editorial-border pt-space-2xl pb-space-2xl">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<!-- Folio & Date Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between border-b editorial-border pb-4 mb-space-xl">
+<div class="flex items-center gap-3">
+<span class="font-label-caps text-label-caps tracking-widest text-secondary font-bold uppercase">Volume XXIV · Dispatch No. 418</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Karen Campus, Nairobi, Kenya</span>
+</div>
+<div class="mt-2 md:mt-0 font-body-sm text-body-sm text-on-surface-variant italic">
+          Published Fortnightly in Print &amp; Scholarly Digital Edition
+        </div>
+</div>
+<!-- Main Headline Cluster -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+<div class="lg:col-span-8">
+<div class="inline-block mb-3 font-label-caps text-label-caps uppercase tracking-wider text-secondary bg-surface-container-high px-3 py-1 rounded-lg border border-secondary/20 font-bold">
+            The Amani Chronicle
+          </div>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight mb-4">
+            Stories of Innovation, Scholarship &amp; Pan-African Leadership.
+          </h1>
+<p class="font-quote-editorial text-quote-editorial text-on-surface-variant max-w-3xl leading-relaxed">
+            Curated dispatches, student investigative research, faculty insights, and institutional milestones from across our 45-acre indigenous learning sanctuary.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end bg-surface-container-low p-6 rounded-xl border border-outline-variant/40">
+<div class="flex items-center gap-2 text-secondary mb-2">
+<span class="material-symbols-outlined text-title-md" data-icon="auto_stories">auto_stories</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Editor's Note</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            "We cultivate thinkers who view Africa not as a continent of potential awaiting realization, but as the vanguard of regenerative technology and ethical governance."
+          </p>
+<span class="font-label-md text-label-md text-primary font-bold">Wanjiru Kamau-Ndegwa, Editor-in-Chief</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Story Hero Spread -->
+<section class="py-space-2xl bg-surface-container-lowest border-b editorial-border">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Lead Image with Warm Lighting -->
+<div class="lg:col-span-7 relative group overflow-hidden rounded-xl border editorial-border shadow-sm">
+<img class="w-full h-[460px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Brilliant East African high school students in modern academy robotics lab working on an intricate multi-axis mechanical robotic arm. The modern sunlit facility overlooks green Kenyan foliage outside floor-to-ceiling glass windows. On workbenches are laptops running sensor code, digital multimeters, copper circuits, and 3D printed components. The shot has rich warm natural light, deep forest green scholastic attire, brass accents, and an atmosphere of collaborative intellectual pursuit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBgMd8OTpmieCIG-uPgTipZRi1QNtlT4p3SZcPxB5iMxvLTxvRivRAID1_ZqgpsUT6eFVp7fvU7_dHhm-qX-ueUGyr7mNz2JL7kG0NFA5tVmxg56pURUed0w9fyvTedggUbPNjctGkmwtix6oe_zFI26q2Ku7aF1Jmas0mTXZlN69itDSCjYybSGGzpLZ9sbqDGmYVLg_nn6jUoxtJ8IFhlVRe0_DoyP8S-5jLR3o59gYDcfX1S-6_"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-surface-bright font-label-caps text-label-caps px-3 py-1 rounded-lg tracking-wider uppercase font-bold shadow-md">
+              Lead Chronicle Cover Story
+            </span>
+</div>
+</div>
+<!-- Lead Narrative Spread -->
+<div class="lg:col-span-5 flex flex-col justify-center space-y-5">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-lg bg-surface-container-high text-primary font-label-caps text-label-caps font-bold tracking-wider uppercase border border-outline-variant/40">
+              STEM &amp; Innovation
+            </span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kigali Summit 2026</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary hover:text-secondary transition-colors duration-200 cursor-pointer">
+            Amani Robotics Guild Clinches First Place at All-Africa Youth Tech Olympiad in Kigali
+          </h2>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-label-md text-label-md text-primary">By Dr. Kwame Achebe</span>
+<span>·</span>
+<span>Dean of Applied Studies</span>
+<span>·</span>
+<span>March 14, 2026</span>
+<span>·</span>
+<span class="text-secondary font-medium">6 min read</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Our senior delegation showcased an automated wildlife tracking drone system engineered in the Karen Innovation Hub, securing provisional international patents and inaugural university research fellowships across three continents.
+          </p>
+<div class="pt-2 flex items-center gap-4">
+<a class="inline-flex items-center gap-2 bg-primary text-surface-bright px-6 py-3 rounded-lg font-title-sm text-title-sm hover:bg-primary-container transition duration-150 ease-in-out border-b-2 border-secondary" href="news.html#dispatches">
+<span>Read Full Investigation</span>
+<span class="material-symbols-outlined text-title-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<button class="p-3 text-on-surface-variant hover:text-primary transition-colors border border-outline-variant/60 rounded-lg hover:bg-surface-container-low" title="Bookmark dispatch">
+<span class="material-symbols-outlined" data-icon="bookmark_border">bookmark_border</span>
+</button>
+<button class="p-3 text-on-surface-variant hover:text-primary transition-colors border border-outline-variant/60 rounded-lg hover:bg-surface-container-low" title="Share article">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filterable Category Strip -->
+<section class="border-b editorial-border bg-surface-container-low py-4 sticky top-20 z-40 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-gutter-desktop flex items-center justify-between overflow-x-auto no-scrollbar gap-4">
+<div class="flex items-center gap-2 min-w-max">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mr-2 tracking-widest font-bold">Filter By Dossier:</span>
+<button class="px-4 py-1.5 rounded-lg bg-primary text-surface-bright font-label-caps text-label-caps font-bold tracking-wider transition-all">
+          All Dispatches
+        </button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-highest text-primary font-label-caps text-label-caps font-bold tracking-wider transition-all">
+          Academic Accolades
+        </button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-highest text-primary font-label-caps text-label-caps font-bold tracking-wider transition-all">
+          Arts &amp; Culture
+        </button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-highest text-primary font-label-caps text-label-caps font-bold tracking-wider transition-all">
+          Campus Life
+        </button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-highest text-primary font-label-caps text-label-caps font-bold tracking-wider transition-all">
+          Sustainability
+        </button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-highest text-primary font-label-caps text-label-caps font-bold tracking-wider transition-all">
+          University Matriculation
+        </button>
+</div>
+<div class="hidden lg:flex items-center gap-3 min-w-max text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Showing 24 Karen Dispatches</span>
+</div>
+</div>
+</section>
+<!-- Curated Editorial Grid / Magazine Stories (6 Asymmetrical Bento Cards) -->
+<section class="py-space-3xl bg-background" id="dispatches">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">Curated Perspectives</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Dispatches from the Quadrangles</h2>
+</div>
+<div class="hidden sm:block text-right">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Archived in the Karen Campus Research Repository</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Story 1: Arts & Culture -->
+<article class="bg-surface-container-lowest rounded-xl border editorial-border overflow-hidden group flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div class="relative overflow-hidden h-60">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Sophisticated indoor theater at an African international school during a classical Swahili literature and music recital. High school students perform with traditional string instruments alongside contemporary cellos under dramatic warm golden stage lighting. The backdrop displays bespoke calligraphic Swahili manuscripts and deep green drapery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDar21lu1DwgzEFOXQMQh-O6Ry6bfG8bVxo_-iVa7h09kFWs15NhqEmKjv1MC9IaXSa6IvIyazFd71_Xu59WMso3STs__78lXaGQtcdN8IZJaXDSrCnIXZsEIy_8pji-VHgWGfQsjCCrOwpjNQoIthRF2JmFXiRMOy6e-dwCHUGiYDrf5r4c3BJMjGu9bEeOL-ST7hY8WVUSHTAA3GEfZoZDrxPznun3fIcWEJ14Ie_8x0jQw7LfygE"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface-container-low/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-2.5 py-1 rounded-lg uppercase tracking-wider font-bold border border-outline-variant/30">
+                Arts &amp; Culture
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary-container/90 text-surface-bright font-body-sm text-body-sm px-2 py-0.5 rounded-lg">
+              01
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-2">February 28, 2026 · 4 min read</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors duration-150 mb-3">
+                African Heritage Week: Exploring Classical Swahili Literature and Ethnomusicology
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                Students decoded 18th-century coastal poetic meter through a modern algorithmic lens, culminating in an orchestral composition performed alongside the Kenya National Philharmonic.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t editorial-border flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Fatuma Omar · Faculty of Humanities</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Story 2: University Placements -->
+<article class="bg-surface-container-lowest rounded-xl border editorial-border overflow-hidden group flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div class="relative overflow-hidden h-60">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A portrait of celebratory secondary school seniors standing proudly in an elegant academic courtyard flanked by towering Jacaranda trees in Nairobi. The students wear immaculate collegiate uniforms in forest green with polished gold crested insignias, clutching admissions portfolios and scholarly certificates under soft morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg51_4Cm8SlGjn2OUfBXXbzdb_SicKOy7dH_fC90rTae3UFoLXbl9zI1hBt4XwGVkTURpu_UO_8Kizy1zyxiv0K39jOdC_ayOhzUzgBw0Ts5QTnOJXvjBpcr02uXTo1YABfOuVGIrw3PVlbZe-zEUxgvY0EbgSclC69ptAsiOagH5h5WYFOQLuUNUDjlDkbvJl8CqnxYycqfnKd_1pGX9LM9WMKSWqjAfPE9biAl-wnUBsEb9CLZR1"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface-container-low/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-2.5 py-1 rounded-lg uppercase tracking-wider font-bold border border-outline-variant/30">
+                University Placements
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary-container/90 text-surface-bright font-body-sm text-body-sm px-2 py-0.5 rounded-lg">
+              02
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-2">March 02, 2026 · 5 min read</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors duration-150 mb-3">
+                Class of 2026 Achieves Record Ivy League, Oxford &amp; Ashesi University Offers
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                With ninety-eight percent of the cohort earning direct admissions to global top-tier institutions, our guidance bureau celebrates transformative full-ride leadership scholarships.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t editorial-border flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">College Matriculation Bureau</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Story 3: Sustainability & Green Campus -->
+<article class="bg-surface-container-lowest rounded-xl border editorial-border overflow-hidden group flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div class="relative overflow-hidden h-60">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Expansive view of a sustainable solar canopy microgrid integrated into an architecturally stunning school pavilion in Karen, Nairobi. Indigenous African landscaping with lush foliage surrounds the pavilion, where students review energy distribution metrics on tablet screens under high-key natural illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQmtW_jqig9583Cv9MiZfRav1OVe4RJT6lK-Kl1K3xHEh_z6KYGf2tVJqaoYfWCn53P1W6jiylgHKodSH8D6VisHqxG3QiyyYS4RJZB9MnUI_hPEgRN4fJ4MsOYYc4gG5zsGrhbPeIOLOTpYlxs4LUG4ped2Iyt-CfREgllTfEWPRTde8eC_tG733_a_GIPe0bwU5B0l60JJdRgWwb1W46geMF6EgFLVOnCFAPOS2UIin7DGQZ3FzQ"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface-container-low/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-2.5 py-1 rounded-lg uppercase tracking-wider font-bold border border-outline-variant/30">
+                Sustainability
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary-container/90 text-surface-bright font-body-sm text-body-sm px-2 py-0.5 rounded-lg">
+              03
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-2">March 08, 2026 · 7 min read</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors duration-150 mb-3">
+                Amani Solar Microgrid Project Achieves 100% Carbon-Neutral Energy Autonomy
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                Designed collaboratively by senior physics fellows and engineers, the Karen microgrid feeds surplus renewable electricity back into Nairobi's regional energy cooperative.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t editorial-border flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Eco-Campus Commission</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Story 4: Global Citizenship -->
+<article class="bg-surface-container-lowest rounded-xl border editorial-border overflow-hidden group flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div class="relative overflow-hidden h-60">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A formal Model United Nations debate chamber in Nairobi filled with ambitious teenage student delegates. Young delegates in tailored suits speak impassionedly into delegate microphones behind wooden desks bearing nation placards, against a sophisticated backdrop of rich wood paneling and institutional flags." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-NPIjS67eOfcwZhLuExmnkl4aB2sSLlV3drir3UsVH23gMnwvfIlAfK4z7qaSoOgBzFp2VM2i8_yKHAhHUCHMqMIg1mDLm17JkKIP0O29oZv25k6ItPTtmjJ-wvl6FUmSYdhaZN5xH1egNRTpuzefBe1_Y3aISG0FIOn00MgNCaBnXOr-RhD-rwDjzR5aOaz07_69yincfRQP1AXhpV_ds4b9Ink-i9WruVyc_ckCi4kLyYwLyVyo"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface-container-low/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-2.5 py-1 rounded-lg uppercase tracking-wider font-bold border border-outline-variant/30">
+                Global Citizenship
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary-container/90 text-surface-bright font-body-sm text-body-sm px-2 py-0.5 rounded-lg">
+              04
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-2">March 10, 2026 · 5 min read</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors duration-150 mb-3">
+                East Africa Model UN: Amani Delegates Draft Regional Water Security Resolution
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                Representing 14 nations, our diplomatic society authored the landmark resolution on shared Lake Victoria ecological preservation ratified unanimously by 35 regional delegations.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t editorial-border flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Tariq Al-Mansoor '27</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Story 5: Student Life -->
+<article class="bg-surface-container-lowest rounded-xl border editorial-border overflow-hidden group flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div class="relative overflow-hidden h-60">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An outdoor literary gathering under the sprawling branches of an ancient umbrella acacia tree on a manicured green lawn in Karen, Nairobi. Students lounge on artisan woven blankets and wooden benches, immersed in book discussions with renowned visiting African novelists under dappled afternoon sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZzH8AWPv1_2NI3ahEdiRoTzHkBxcze-4Mmqtcuq5-wYvn6wAnFVE5a1BU-Wow5Paoot0TJwsIMahawwGy9IB8oPq2LT_jJh72WSHZia0-VNM0KNYPHyD56FrBqkOoMUrGApwePrgCBWT7vmCm9gHfHXmuvBcfI_19Iir4NxFwmaKQ4FHx-9IGIK5VVwdGfVYA2Jehneqmj_ja-K_zOf8axW2Up6pJr0s2BL0_Pdavp4594-SB5t2h"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface-container-low/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-2.5 py-1 rounded-lg uppercase tracking-wider font-bold border border-outline-variant/30">
+                Student Life
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary-container/90 text-surface-bright font-body-sm text-body-sm px-2 py-0.5 rounded-lg">
+              05
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-2">March 12, 2026 · 4 min read</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors duration-150 mb-3">
+                Under the Acacia Canopy: Reflections on Our Annual Karen Literary Festival
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                Three days of unhurried discourse with visiting Booker Prize laureates illuminated the power of speculative fiction as a catalyst for political reimagining.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t editorial-border flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Maya Kiprotich · Literary Guild</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Story 6: Leadership & Enterprise -->
+<article class="bg-surface-container-lowest rounded-xl border editorial-border overflow-hidden group flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div class="relative overflow-hidden h-60">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A modern architectural auditorium on a Nairobi campus during a high-stakes youth financial technology pitch competition. Young visionary entrepreneurs stand before holographic data visualizations on stage, pitching digital payment rails to venture capital judges in front of an attentive audience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUq2BF3lVwlGs8Lsjq4JLLOB1JQYyU_B6rodIZ0iUtbsPEq9M1BsytweS7CmXrhdHjPiIIIb7tle1-WqXYk5vHcZinGSFTHu9KeG-MsQa9qycw_QD-pBXYPSs5PMEUGi0IiPmkeX2b0_nFfN-Uje9tGR67gTScGzLFC1zMn5ONHIEVQ1s-PxmaT_7PLpuNbh6sQ6Gq1xEymDMGmzoMc8KryovaVrtpEgHsgdTuyI_JNh9BpfT-FIrp"/>
+<div class="absolute top-3 left-3">
+<span class="bg-surface-container-low/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-2.5 py-1 rounded-lg uppercase tracking-wider font-bold border border-outline-variant/30">
+                Leadership &amp; Enterprise
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary-container/90 text-surface-bright font-body-sm text-body-sm px-2 py-0.5 rounded-lg">
+              06
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-2">March 14, 2026 · 6 min read</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors duration-150 mb-3">
+                Inaugural Pan-African Youth FinTech Summit Hosted in North Academic Quad
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed">
+                Student-led seed projects received seventy thousand dollars in venture backing to prototype cross-border agricultural payment solutions for smallholder coffee farmers.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t editorial-border flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Amani Enterprise Incubator</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination / Archive Link -->
+<div class="mt-space-2xl text-center">
+<a class="inline-flex items-center gap-2 border border-primary text-primary px-8 py-3 rounded-lg font-title-sm text-title-sm hover:bg-surface-container transition-colors duration-150" href="news.html#dispatches">
+<span>Explore Complete Chronicle Archives (1999–2026)</span>
+<span class="material-symbols-outlined text-title-sm" data-icon="history_edu">history_edu</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Thought Leadership & Academic Publications Journal (The Karen Review) -->
+<section class="py-space-3xl bg-primary-container text-surface-bright border-y border-secondary/20">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Publication Dossier Callout -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface/10 text-secondary-fixed border border-secondary-fixed/30 font-label-caps text-label-caps font-bold tracking-widest uppercase">
+<span class="material-symbols-outlined text-body-sm" data-icon="menu_book">menu_book</span>
+<span>Annual Scholarly Journal</span>
+</div>
+<h2 class="font-display-hero text-headline-lg text-surface tracking-tight">
+            The Karen Review of Applied Science &amp; Ethics
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+            Volume VII compiles peer-reviewed senior capstone research papers, faculty treatises on bioethics in the Global South, and philosophical essays on machine learning sovereignty.
+          </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-2">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary text-surface-bright px-6 py-3 rounded-lg font-title-sm text-title-sm hover:bg-secondary-fixed-dim transition duration-150" href="news.html#newsletter">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+<span>Download Volume VII (PDF · 48MB)</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 border border-secondary/40 text-secondary-fixed hover:bg-surface/5 px-5 py-3 rounded-lg font-title-sm text-title-sm transition duration-150" href="news.html#newsletter">
+<span>Call for Papers 2027</span>
+</a>
+</div>
+</div>
+<!-- Right: Capstone Research Dissertations Index -->
+<div class="lg:col-span-7 bg-surface-container-lowest/5 p-8 rounded-xl border border-secondary/20 backdrop-blur-sm">
+<h3 class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest font-bold mb-6 pb-2 border-b border-secondary/20">
+            Selected Student Capstone Research Dissertations (Honors Grade)
+          </h3>
+<div class="space-y-5 divide-y divide-secondary/15">
+<div class="pt-4 first:pt-0 group flex items-start justify-between cursor-pointer">
+<div class="space-y-1 pr-4">
+<span class="text-secondary font-headline-sm text-headline-sm">01</span>
+<h4 class="font-headline-sm text-title-md text-surface group-hover:text-secondary-fixed transition-colors">
+                  Comparative Analysis of Indigenous Mycorrhizal Inoculants for Degraded Arable Soil Reclamation in Machakos County
+                </h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                  Lead Researcher: Amara Osei '26 · Mentored by Dr. N. Mwangi, Dept. of Botanical Ecology
+                </p>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed opacity-60 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="pt-4 group flex items-start justify-between cursor-pointer">
+<div class="space-y-1 pr-4">
+<span class="text-secondary font-headline-sm text-headline-sm">02</span>
+<h4 class="font-headline-sm text-title-md text-surface group-hover:text-secondary-fixed transition-colors">
+                  Decentralized Blockchain Governance Models for Communal Pastoralist Grazing Conservancies
+                </h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                  Lead Researcher: Kipchumba Tanui '26 · Mentored by Prof. L. Gitari, Institute of Ethics
+                </p>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed opacity-60 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="pt-4 group flex items-start justify-between cursor-pointer">
+<div class="space-y-1 pr-4">
+<span class="text-secondary font-headline-sm text-headline-sm">03</span>
+<h4 class="font-headline-sm text-title-md text-surface group-hover:text-secondary-fixed transition-colors">
+                  Sub-Saharan Phonetic Modeling for Open-Source Swahili and Luganda NLP Transformer Networks
+                </h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                  Lead Researcher: Zahra K. Diallo '26 · Mentored by Dr. Kwame Achebe, Innovation Lab
+                </p>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed opacity-60 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Campus Events & Calendar -->
+<section class="py-space-3xl bg-surface-container-low border-b editorial-border" id="events">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">Academic Diary &amp; Public Colloquia</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Upcoming Campus Gatherings</h2>
+</div>
+<a class="mt-4 md:mt-0 font-body-sm text-body-sm text-primary font-bold inline-flex items-center gap-1 hover:text-secondary transition-colors" href="school_calendar.html">
+<span>Full Academic Term Calendar (2025–2026)</span>
+<span class="material-symbols-outlined text-body-md" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Event 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border editorial-border hover:border-primary transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between border-b editorial-border pb-4 mb-4">
+<div>
+<span class="font-display-hero text-headline-md text-secondary font-headline-lg">18</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant ml-1 font-bold">April 2026</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-lg bg-surface-container text-primary font-label-caps text-label-caps font-bold uppercase">
+                Institutional
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Term 3 Founder's Day &amp; Gala Concert</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+              Honoring our establishment in 1999 with keynote reflections from alumni global leaders and an orchestral recital in the Karen Performing Arts Amphitheatre.
+            </p>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant pt-4 border-t editorial-border">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md" data-icon="schedule">schedule</span>
+<span>10:00 AM EAT</span>
+</span>
+<a class="font-label-md text-label-md text-primary hover:text-secondary font-bold" href="book_tour.html">RSVP Seat</a>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border editorial-border hover:border-primary transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between border-b editorial-border pb-4 mb-4">
+<div>
+<span class="font-display-hero text-headline-md text-secondary font-headline-lg">04</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant ml-1 font-bold">May 2026</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-lg bg-surface-container text-primary font-label-caps text-label-caps font-bold uppercase">
+                Admissions
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Open Campus Admissions Masterclass &amp; Tea</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+              An intimate briefing with Dean of Admissions for prospective Year 7 and Sixth Form families, paired with guided estate nature walk and lab demonstrations.
+            </p>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant pt-4 border-t editorial-border">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md" data-icon="schedule">schedule</span>
+<span>02:30 PM EAT</span>
+</span>
+<a class="font-label-md text-label-md text-primary hover:text-secondary font-bold" href="book_tour.html">Book Slot</a>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border editorial-border hover:border-primary transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between border-b editorial-border pb-4 mb-4">
+<div>
+<span class="font-display-hero text-headline-md text-secondary font-headline-lg">22</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant ml-1 font-bold">May 2026</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-lg bg-surface-container text-primary font-label-caps text-label-caps font-bold uppercase">
+                Debate &amp; Forensics
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Pan-African Inter-School Debating Championship</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+              Welcoming delegations from Accra, Johannesburg, Kigali, and Cairo for three days of rigorous parliamentary debate regarding African Continental Free Trade and youth climate jurisprudence.
+            </p>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant pt-4 border-t editorial-border">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md" data-icon="schedule">schedule</span>
+<span>All Day Session</span>
+</span>
+<a class="font-label-md text-label-md text-primary hover:text-secondary font-bold" href="book_tour.html">Visitor Passes</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter & Gazette Subscription Strip -->
+<section class="py-space-2xl bg-surface-container-highest/60 border-b editorial-border" id="newsletter">
+<div class="max-w-4xl mx-auto px-gutter-desktop text-center">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">Fortnightly Dispatches</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1 mb-3">
+        Subscribe to The Karen Gazette
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-8">
+        Receive curated student journalism, academic colloquia transcripts, faculty monographs, and campus invitations directly to your personal archive.
+      </p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto" onsubmit="event.preventDefault();">
+<input class="flex-1 bg-surface-container-lowest border border-outline-variant/80 px-4 py-3 rounded-lg text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-secondary/30 transition-all placeholder:text-on-surface-variant/60" placeholder="Enter your institutional or personal email" required="" type="email"/>
+<button class="bg-primary text-surface-bright font-title-sm text-title-sm px-6 py-3 rounded-lg hover:bg-primary-container transition duration-150 border-b-2 border-secondary whitespace-nowrap" type="submit">
+          Join Distribution
+        </button>
+</form>
+<p class="font-body-sm text-body-sm text-on-surface-variant/70 mt-3">
+        Strict privacy protocols. We never share subscriber records with third parties. Unsubscribe anytime.
+      </p>
+</div>
+</section>
+<!-- Shared Footer -->
+<div id="footer-placeholder"></div>
+
+<script>
+  // Load shared footer
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
+
+<script src="main.js"></script>
+</body></html>

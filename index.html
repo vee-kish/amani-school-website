@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Amani International Academy | Karen Campus, Nairobi</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#f3fcf5",
+            "outline-variant": "#c1c8c2",
+            "on-secondary": "#ffffff",
+            "surface-container-low": "#edf6ef",
+            "surface-tint": "#456554",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#1e1c11",
+            "surface-container-highest": "#dce5de",
+            "secondary-container": "#fed269",
+            "surface-container": "#e7f0e9",
+            "surface-dim": "#d3dcd6",
+            "tertiary-fixed": "#e9e2d1",
+            "primary-fixed": "#c7ebd4",
+            "error": "#ba1a1a",
+            "tertiary-container": "#302d22",
+            "secondary-fixed-dim": "#ecc15a",
+            "on-primary-fixed": "#002113",
+            "on-secondary-fixed-variant": "#5a4300",
+            "inverse-on-surface": "#eaf3ec",
+            "tertiary": "#1b180e",
+            "on-tertiary-fixed-variant": "#4a473a",
+            "tertiary-fixed-dim": "#ccc6b6",
+            "primary-fixed-dim": "#abcfb9",
+            "surface-container-high": "#e2eae4",
+            "on-background": "#151d19",
+            "outline": "#727973",
+            "on-primary": "#ffffff",
+            "surface": "#f3fcf5",
+            "primary-container": "#133324",
+            "surface-bright": "#f3fcf5",
+            "on-tertiary-container": "#9a9485",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#251a00",
+            "surface-variant": "#dce5de",
+            "on-primary-fixed-variant": "#2e4d3d",
+            "secondary-fixed": "#ffdf99",
+            "on-surface-variant": "#424844",
+            "on-secondary-container": "#765900",
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "on-surface": "#151d19",
+            "on-primary-container": "#7a9c88",
+            "inverse-primary": "#abcfb9",
+            "inverse-surface": "#2a322e",
+            "secondary": "#775a00",
+            "primary": "#001e11"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-desktop": "2.5rem",
+            "space-md": "1rem",
+            "gutter-tablet": "1.5rem",
+            "space-2xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.75rem",
+            "space-5xl": "8rem",
+            "margin-tablet": "2.5rem",
+            "space-3xs": "0.125rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.5rem",
+            "space-4xl": "6rem",
+            "space-3xl": "4rem",
+            "space-2xl": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-desktop": "5rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Manrope"],
+            "quote-editorial": ["Newsreader"],
+            "body-sm": ["Manrope"],
+            "title-sm": ["Manrope"],
+            "body-md": ["Manrope"],
+            "title-md": ["Manrope"],
+            "label-caps": ["Manrope"],
+            "display-hero-mobile": ["Newsreader"],
+            "headline-lg": ["Newsreader"],
+            "label-md": ["Manrope"],
+            "headline-lg-mobile": ["Newsreader"],
+            "headline-sm": ["Newsreader"],
+            "headline-md": ["Newsreader"],
+            "display-hero": ["Newsreader"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "quote-editorial": ["22px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "title-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "title-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .academic-card-hover {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+    .academic-card-hover:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+  <script src="navigation.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Shared Navigation -->
+<div id="nav-placeholder"></div>
+
+<script>
+  fetch("nav.html")
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("nav-placeholder").innerHTML = html;
+      window.dispatchEvent(new CustomEvent("amaniNavLoaded"));
+    });
+</script>
+
+ 
+  <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
+<!-- HERO SECTION -->
+<section class="relative pt-space-3xl pb-space-4xl overflow-hidden">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Hero Narrative -->
+<div class="lg:col-span-6 space-y-space-xl">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/50">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest">Admissions Open · 2027 Academic Year</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight leading-[1.08]">
+            Where curiosity becomes <span class="font-quote-editorial italic text-secondary font-normal">possibility.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            A learning community preparing young people to think boldly, lead responsibly, and shape the future from Nairobi's serene Karen escarpment to the global stage.
+          </p>
+<div class="pt-space-xs flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs bg-primary-container text-surface-container-lowest px-7 py-3.5 rounded-lg font-title-sm text-title-sm hover:bg-primary transition-all duration-200 border-b-2 border-secondary shadow-md hover:shadow-lg group" href="#admissions">
+<span>Book a School Tour</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-secondary-fixed">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-lg border border-primary text-primary font-title-sm text-title-sm hover:bg-surface-container transition-all" href="#explore">
+<span>Explore Amani</span>
+</a>
+</div>
+<!-- Academic Affiliation Chips -->
+<div class="pt-space-lg border-t border-outline-variant/30 flex flex-wrap items-center gap-y-2 gap-x-6 text-on-surface-variant/80 font-label-caps text-[11px] tracking-wider">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> IB World Continuum</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Cambridge International</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Round Square Global</span>
+</div>
+</div>
+<!-- Hero Robotics Lab Imagery -->
+<div class="lg:col-span-6 relative">
+<div class="relative z-10 rounded-xl overflow-hidden border-2 border-surface-container-highest shadow-2xl p-2 bg-surface-container-lowest">
+<div class="relative overflow-hidden rounded-lg">
+<img alt="Amani students collaborating on a robotic arm project in the sunlit Karen innovation lab" class="w-full h-[480px] lg:h-[540px] object-cover object-center transform hover:scale-[1.02] transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYZg84zyu5VZnRqOW6cUvDGs_YcKjW-lIY1mLjc150AuRj3b4RHZsKNtBol39YuhJWR5T58CudBDFvwDv3R8QoLzoHEBuLpmBnI4eK7HqUfGhjR6RbL2BmuVTXkrNlMYLC7Gy24lqabbdi5Ui5M5vz8nlw3RADkDdmhUW3VSaxpzoaMBXOhtw32-Os7S39lKy1ZaXfIqidFbbDRgjtx24xKGDShYeASHI_4bpWNQ8Z3K2dkQXhjczB"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 right-4 text-surface-container-lowest p-4 rounded bg-primary-container/80 backdrop-blur-sm border border-secondary/30">
+<p class="font-label-caps text-[10px] tracking-widest text-secondary-fixed uppercase">Centre for Applied Robotics &amp; Artificial Intelligence</p>
+<p class="font-headline-sm text-lg text-surface-bright font-medium mt-0.5">Karen Innovation Lab · Year 11 Capstone Engineering Cohort</p>
+</div>
+</div>
+</div>
+<!-- Decorative Architectural Framing Lines -->
+<div class="absolute -top-4 -right-4 w-48 h-48 border-t-2 border-r-2 border-secondary/40 rounded-tr-xl pointer-events-none -z-0"></div>
+<div class="absolute -bottom-6 -left-6 w-56 h-56 bg-surface-container-high rounded-xl -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. QUICK SCHOOL INTRO & STATS -->
+<section class="py-space-4xl bg-surface-container-low border-y border-outline-variant/30" id="about">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Faculty & Student Collaborative Photo -->
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="relative">
+<div class="rounded-xl overflow-hidden border border-outline-variant/60 shadow-lg bg-surface-container-lowest p-2.5">
+<img class="w-full h-[440px] object-cover rounded-lg" data-alt="An accomplished African woman senior science faculty mentor wearing elegant academic attire engaging in close intellectual discourse with a diverse group of focused secondary students in a sun-drenched, glass-walled courtyard surrounded by Karen acacias. The mood is intellectually rigorous, supportive, and pastoral. Natural daylight casts crisp architectural shadows across high-end bespoke wooden seminar tables." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO2fmnUCYRuqIbw-I7T7cFUNEsTHqtV_DO642jkIsKTAyOFZK97hNl0YHwm7navLwB2EyvBQTXXGB-zfp2-5Q73vd3hguY3QGTgN8zmgtktXmO-zuv_zAGYTtEos8jIDSMveJyGpSZU2PIzc_Mbi7moNHkjmv4ILeFYn681g1l_5MG2dviBqR2v-ryyMc1ktJlPeRoDjufv_zb6d7YumQUDbt1VL5sJ7C1PLynlbxPaRvV9m3EF4x4"/>
+</div>
+<div class="absolute -bottom-5 -right-5 bg-primary-container text-surface-container-lowest p-5 rounded-lg border-b-2 border-secondary shadow-xl max-w-xs">
+<p class="font-quote-editorial italic text-title-sm text-secondary-fixed leading-snug">
+                "We do not merely teach knowledge; we nurture the moral courage to apply it."
+              </p>
+<p class="font-label-caps text-[10px] text-surface-container-highest mt-2 tracking-widest">
+                Dr. Amina Ochieng · Dean of Studies
+              </p>
+</div>
+</div>
+</div>
+<!-- Narrative & Stat Metrics -->
+<div class="lg:col-span-7 order-1 lg:order-2 space-y-space-xl lg:pl-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest uppercase">Institutional Heritage</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-2xs">
+              Rooted in African Heritage, Cultivating Global Pioneers
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm leading-relaxed">
+              Nestled across 45 tranquil acres in Karen, Nairobi, Amani International Academy harmonizes unyielding international intellectual standards with Pan-African cultural consciousness, cultivating graduates who articulate nuanced solutions for an interdependent planet.
+            </p>
+</div>
+<!-- The Four Refined Stats Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-lg bg-surface-container-lowest rounded-lg border border-outline-variant/40 shadow-xs hover:border-secondary/60 transition-colors">
+<div class="font-headline-lg text-headline-lg text-primary font-serif font-normal">25<span class="text-secondary font-sans text-2xl">+</span></div>
+<p class="font-title-sm text-title-sm text-on-surface mt-1">Years of Distinction</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pioneering academic leadership in East Africa since 1999.</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-lg border border-outline-variant/40 shadow-xs hover:border-secondary/60 transition-colors">
+<div class="font-headline-lg text-headline-lg text-primary font-serif font-normal">1:12</div>
+<p class="font-title-sm text-title-sm text-on-surface mt-1">Teacher to Student</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Unwavering individual mentorship, pastoral care, and guidance.</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-lg border border-outline-variant/40 shadow-xs hover:border-secondary/60 transition-colors">
+<div class="font-headline-lg text-headline-lg text-primary font-serif font-normal">40<span class="text-secondary font-sans text-2xl">+</span></div>
+<p class="font-title-sm text-title-sm text-on-surface mt-1">Nationalities</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">A cosmopolitan student body learning across cultures daily.</p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-lg border border-outline-variant/40 shadow-xs hover:border-secondary/60 transition-colors">
+<div class="font-headline-lg text-headline-lg text-primary font-serif font-normal">92<span class="text-secondary font-sans text-2xl">%</span></div>
+<p class="font-title-sm text-title-sm text-on-surface mt-1">Global Top Placement</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Admitted to Ivy League, Oxbridge, and Russell Group universities.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. OUR APPROACH -->
+<section class="py-space-5xl bg-background" id="academics">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-3xl">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest uppercase">The Educational Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs">Education beyond the classroom.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm">
+          A fourfold holistic architecture designed to foster scholarship, ethical fortitude, artistic expression, and physical vigor.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- 1. Academic Excellence -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 p-space-lg flex flex-col justify-between academic-card-hover group">
+<div>
+<div class="w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Senior secondary scholars deeply engaged in an IB chemistry experiment inside a state-of-the-art laboratory with floor-to-ceiling windows showing lush Kenyan acacia foliage. Crisp daylight illuminates high precision glassware, digital spectroscopy monitors, and neat lab journals. The aesthetic is clean, academic, and modern minimalist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBERKAkScAFYh4qZZoJcojdYZGk_hMbWSuaSMc2LJlP0PrbUc0_UGlKqBXEK-lGdGdBfrNWgIjScznYFwwo3nF7S1bRIotGmTO6Oor2RsD4nPCQ1dqwBGpuW6TN2acwAF_YLDi3J7h-JQjANu3nEJUdu8wUMsdQ-QnjiO4k6u2eMEkp5nctHYvfFjL_--TcgFtycz8jfvzi-Mtci3nWMZG1M3AeurQZQH83gmAkxdsCRzhzG0mc_ieI"/>
+</div>
+<span class="font-quote-editorial text-secondary text-lg">01</span>
+<h3 class="font-title-md text-title-md text-primary mt-1">Academic Excellence</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              Rigorous dual pathways offering the International Baccalaureate (IB) Diploma and Cambridge A-Levels, fostering fearless critical inquiry and deep research habits.
+            </p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/30 mt-space-md flex items-center text-secondary font-title-sm text-sm">
+<span>Learn syllabus details</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- 2. Character & Leadership -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 p-space-lg flex flex-col justify-between academic-card-hover group">
+<div>
+<div class="w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Student council delegates convening around an expansive polished oval teak table in a modern council chamber. The students are enthusiastically debating a Pan-African governance resolution with drafted documents and laptops open. Soft morning Nairobi light highlights the warm wooden architectural finishes and deep forest green upholstery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRQU_aC5ou-aOrJRim9iRAJlZiu5kiXvrWdGwQegttkFGNZjzfvYdvPqJln6rAi6gFmbtuLsZQxmXqBx6Ills_WQAnO0HVVnGW6yrUFR4dPgCpQKzYr41fQ626fFiYVcWWm8y-amLxP1DY6lWiBAjRsj23_gE9hg-0UeuYFPh-UauKmKRNZ_TX1_VB1c6P4cW-OoLhtfush6l5WeQlyFNXFZJneV41oaxHcaQ9loJylnVG1MLvaCdb"/>
+</div>
+<span class="font-quote-editorial text-secondary text-lg">02</span>
+<h3 class="font-title-md text-title-md text-primary mt-1">Character &amp; Leadership</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              Rooted in Pan-African governance case studies, ethical debate, service-learning leadership, and participatory governance across Nairobi and regional communities.
+            </p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/30 mt-space-md flex items-center text-secondary font-title-sm text-sm">
+<span>Our leadership ethos</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- 3. Creativity & Innovation -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 p-space-lg flex flex-col justify-between academic-card-hover group">
+<div>
+<div class="w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Students painting and sculpting in an expansive, double-height fine arts studio with raw concrete walls, warm wood easels, and expansive glass doors opening to a tranquil bamboo garden. Large contemporary African canvas paintings are on display with natural daylight bathing vibrant earth and mineral pigments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqmIHmh44zz45Olwhsmhtnt-9wCqPlSrNVRynl-Pv1ZqioTkOPraSRK8zUbWj8juUMIkmDgbTXTBXHGa0g38atyu6qysJDbf68_B8B6z78kBuHzEus2mNVGyUPpTz06e5O2FxZOqApqFOMFqGFR2_ZywiSgbd3S5xcZGc7ZtcPaTYE6LeAVtxxvy9M1oCXONYR2Z1_DRrOXEFH8iFIS67wVoyReT-H2dZMgFymb-SLYet6SrSxwfaO"/>
+</div>
+<span class="font-quote-editorial text-secondary text-lg">03</span>
+<h3 class="font-title-md text-title-md text-primary mt-1">Creativity &amp; Innovation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              Interdisciplinary design studios blending contemporary fine arts, traditional African textiles, music production suites, and computational media design.
+            </p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/30 mt-space-md flex items-center text-secondary font-title-sm text-sm">
+<span>Creative arts studios</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- 4. Sport & Wellbeing -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/50 p-space-lg flex flex-col justify-between academic-card-hover group">
+<div>
+<div class="w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Athletics students in pristine athletic uniforms sprinting on an Olympic standard running track framed by sweeping Kenyan indigenous trees, distant Ngong Hills silhouette, and modern architectural grandstands. The golden afternoon light creates long athletic shadows and a vibrant, healthy atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWNIbJvImR2K8KOj-KPkqR5NGSYAU91SQYOunVQtLT3fSQhiqH3Mt0bg1ciJRg-Ol37yDPaHV7WqzCbWy_rFM0X4YAKcECvFgwAjzjiQgoLRDeHeF9pAxchyVBk_goaroNy0v4MvE_LQQpN9b3WT5HIMBiP7v6zuxpt6UKSAnZ61JZD4WssJA3K_uSxvqPhQYrwiwO5DKPUM9fouQH-AqaUBz4e0JM5-RSQ4K03KGugC6IsjsxLpAg"/>
+</div>
+<span class="font-quote-editorial text-secondary text-lg">04</span>
+<h3 class="font-title-md text-title-md text-primary mt-1">Sport &amp; Wellbeing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              Olympic-standard facilities, competitive swimming, equestrian pathways, rugby academies, and a dedicated mindfulness center for mental wellness.
+            </p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/30 mt-space-md flex items-center text-secondary font-title-sm text-sm">
+<span>Sports &amp; holistic health</span>
+<span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. EXPLORE THE SCHOOL (STAGE NAVIGATION) -->
+<section class="py-space-5xl bg-surface-container-low border-t border-outline-variant/30" id="explore">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest uppercase">The Educational Continuum</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs">Tailored Journeys Across Every Stage</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0">
+          From the earliest moments of sensory discovery to independent pre-university research, our sequential curriculum builds intellectual autonomy.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Early Years -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col shadow-xs group">
+<div class="h-60 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Joyful diverse early years toddlers exploring an outdoor sensory botanical garden in Karen Nairobi. The children examine indigenous herbs with magnifying glasses guided by an attentive educator under dappled sunlight. Lush greens, rich terracotta planters, and warm natural timber play pavilions define the architectural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2cLjB4IGkfp5QvlzJWlnIaEfvsGQ0A2ZKWNowBW2vPiILt3AFhofP56V3XlL9d5fAEYZ0nqs_ZcuNHkIPkh6W-I2f883JjS7X3gkdY9Q1-LgkvWBniEz9K8SvGPadC4-hPV3MFUdVwSGWIHxIxNDH-ZmK1ktnT9tgK6jIatdFbC8XFIpcAKcrhE8dUTZto0JJb9hEGtnVF-RUVrhCG95BqzBJ2rFSLcgZ4ojQcCoBGuyfvU2hruPC"/>
+<span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-xs font-label-caps text-[10px] text-primary px-2.5 py-1 rounded tracking-wider border border-outline-variant/40">AGES 2–5</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Early Years</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Wonder, sensory discovery, and play-based bilingual immersion in lush garden classrooms designed for natural curiosity.
+              </p>
+</div>
+<a class="mt-space-lg pt-space-sm border-t border-outline-variant/30 inline-flex items-center text-primary font-title-sm text-sm group-hover:text-secondary transition-colors" href="#admissions">
+<span>Explore Early Years</span>
+<span class="material-symbols-outlined text-[16px] ml-1.5 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Primary School -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col shadow-xs group">
+<div class="h-60 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Primary school children collaborating enthusiastically over geometric 3D wooden puzzles and tablets in a vibrant, airy modern Nairobi classroom. Generous sunlight streams through sheer blinds illuminating botanical study sketches on walls. Warm tones, joyful student smiles, and active collaborative discovery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm4Ow0FtAG1fICzTeQ8jvEIxlQmQueTFl9J9Bd0q4uU0dUBiLQt8Bpb3xI_JH5miwgCj98XxjuaDKEXuuxMJSOi6U_UfVeliy5EMQTyTT02soipbQCry8ixBvClVVZ6GqdchamgN1kYd9UBjI7SBLHS56lWngvAyjzVyb0efVrlcae4wONp8Jwl63GUsLr2_WuMaQSoEbph1QYZJNne7m0M_kZVFVn57BCCBYfnFJOHOf864H8948-"/>
+<span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-xs font-label-caps text-[10px] text-primary px-2.5 py-1 rounded tracking-wider border border-outline-variant/40">YEARS 1–6</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Primary School</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Foundational academic mastery, inquiry-driven science, mathematics, and collaborative projects that celebrate active problem solving.
+              </p>
+</div>
+<a class="mt-space-lg pt-space-sm border-t border-outline-variant/30 inline-flex items-center text-primary font-title-sm text-sm group-hover:text-secondary transition-colors" href="#admissions">
+<span>Explore Primary</span>
+<span class="material-symbols-outlined text-[16px] ml-1.5 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Secondary School -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col shadow-xs group">
+<div class="h-60 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Middle school and secondary students in formal navy blazers participating in a lively, respectful mock parliamentary debate in a wood-paneled lecture hall. An articulate teenage girl addresses her peers from a sleek lectern with notes in hand while attentive classmates listen. Clean, prestigious, intellectual atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByzzy30JLB5jqmudoyiKJAHreDMEEDYKWXV0A5l8wC10BMitFAE3mn4nnWO9khP5f5uLk9mSxjKI3aSD7L496eeZTuzOJwJJSBOBkWVK80zcygxDtLxq8kZHfCmLTsIphfJf8veChzbBrSbIUL9ftEiqngbe-5AW0e-awo1i7yMkD1QFuWmsXLh_pNk0mwJT3Rv-QuFDPl10pI-OaMp7h1pZjHRASsz0G4EsJ_AZSTiS5gMma5IBMU"/>
+<span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-xs font-label-caps text-[10px] text-primary px-2.5 py-1 rounded tracking-wider border border-outline-variant/40">YEARS 7–11</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Secondary School</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Rigorous academic exploration, debate, competitive inter-school athletics, and leadership development that prepares thinkers for global challenges.
+              </p>
+</div>
+<a class="mt-space-lg pt-space-sm border-t border-outline-variant/30 inline-flex items-center text-primary font-title-sm text-sm group-hover:text-secondary transition-colors" href="#admissions">
+<span>Explore Secondary</span>
+<span class="material-symbols-outlined text-[16px] ml-1.5 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Sixth Form -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col shadow-xs group">
+<div class="h-60 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pre-university Sixth Form scholars studying individually and in small cohorts within a tranquil, two-story modern library filled with mahogany bookshelves, architectural light fixtures, and expansive glass walls overlooking manicured grounds. Students examine university prospectuses and complex mathematical texts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFTdQNsSt_0ulvBdKrDqMRKJvIMWR2zLJDy0uOeZ8LdVRg-eOzYGUEtxv8Z7n4C_ku1s2i_u91UdiDHrCY7HNvasXsMEZBky80sVbnP7UQw0ft2Or-Mqt855GRotaj-vN9vGUWltEO5xSLA7CYAn2exikbL--m1UEyfBnYXrCKUVQAC9hmnKV8bRsf068iFR2Zl4xjA2bwBuq7EK0ySRp_HF180u0eNgeUwwHpGQgUkIhwYUuSTAFT"/>
+<span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-xs font-label-caps text-[10px] text-primary px-2.5 py-1 rounded tracking-wider border border-outline-variant/40">YEARS 12–13</span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Sixth Form / Senior</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                IB Diploma &amp; A-Levels, bespoke university counseling, and independent capstone research directing scholars to the world's leading academies.
+              </p>
+</div>
+<a class="mt-space-lg pt-space-sm border-t border-outline-variant/30 inline-flex items-center text-primary font-title-sm text-sm group-hover:text-secondary transition-colors" href="#admissions">
+<span>Explore Sixth Form</span>
+<span class="material-symbols-outlined text-[16px] ml-1.5 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. CAMPUS EXPERIENCE (ASYMMETRICAL GALLERY) -->
+<section class="py-space-5xl bg-background overflow-hidden" id="campus">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="max-w-3xl mb-space-3xl">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest uppercase">The Karen Estate</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs">
+          An Architectural Sanctuary for Inspired Learning
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm">
+          Set against the quiet majesty of Nairobi's southern ridges, our 45-acre campus marries modern sustainable architecture with indigenous forest canopies.
+        </p>
+</div>
+<!-- Bento-style Architectural Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg">
+<!-- Main Feature: Sunlit Classrooms & Acacia Canopies -->
+<div class="md:col-span-8 group rounded-xl overflow-hidden border border-outline-variant/50 relative min-h-[380px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern architectural school pavilion with expansive glass curtain walls and soaring timber eaves overlooking pristine indigenous Kenyan acacia canopies. Warm morning sunlight casts delicate leaf shadows on polished concrete paths. Minimalist student study nooks look out into the serene green canopy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCToOfyEjxmNldVjeF1QmAdreSYAzIks8sWtNrul-Ap1ac_pr-jRDyaWhil1wLiLSQJ5fvw5cF3BUSy-uo8dbXx5uyXC_8ocYLbGQkfjw67o6ECqQD2_w6C45N9aMZLM8ee9vzR5zcb2E4-D3Mwcyk5nlEH_K-0lGLXSH-XeFenqUA8-Z_NFDDRN76J9pcEPiMKwvGYSs9eWjKw84NrAnQ_sYy9gyCVgsn5Sp6T4Gw0DmyA3qLOgsF4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-surface-container-lowest">
+<span class="font-label-caps text-[10px] text-secondary-fixed uppercase tracking-widest">Pavilion Architecture</span>
+<h3 class="font-headline-sm text-xl text-surface-bright mt-1">Sunlit Classrooms with Indigenous Acacia Canopies</h3>
+<p class="font-body-sm text-body-sm text-surface-variant/90 max-w-xl mt-1">
+              Biophilic learning spaces oriented to maximize natural cross-ventilation and diffused equatorial light.
+            </p>
+</div>
+</div>
+<!-- Tile 2: Science & Biotech Laboratories -->
+<div class="md:col-span-4 group rounded-xl overflow-hidden border border-outline-variant/50 relative min-h-[380px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Cutting-edge secondary school biotechnology laboratory equipped with laminar flow hoods, PCR thermocyclers, and digital microscopes in Karen Nairobi. Scholars in white coats analyze plant specimens under clean, glare-free LED illumination. Professional, pristine scientific research environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgkIeU5_B9Ym38Aae-G7hRjyl8SEA8feGlMClhMH1n4U44r9QT_N470C92SHq9bYt2wCih0AMwHovrXk2DS0rKUrBE4gNS1BcLD3jU4WpanF4Gj5RkxrHKLJXrcI5nNt2VUuT3AUa0apY3NyYHgircWeeEMBGoKedVh826kYwlGr_9aQgP_SIlsStZqzv54AJW1QorFZ63YXQ_FTwLHQeNt9R56AQpTS8E-PVEQaO_yC4j0W-_-UNb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-surface-container-lowest">
+<span class="font-label-caps text-[10px] text-secondary-fixed uppercase tracking-widest">Research Infrastructure</span>
+<h3 class="font-title-md text-surface-bright mt-1">State-of-the-Art Science &amp; Biotech Labs</h3>
+<p class="font-body-sm text-body-sm text-surface-variant/90 mt-1">Advanced facilities for genetic sequencing and clean water research.</p>
+</div>
+</div>
+<!-- Tile 3: Memorial Library & Research Commons -->
+<div class="md:col-span-4 group rounded-xl overflow-hidden border border-outline-variant/50 relative min-h-[340px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Multi-level academic library with soaring custom mahogany bookshelves, circular reading galleries, and floor-to-ceiling glass reading bays. Students quietly study with laptops and leather-bound volumes under soft architectural pendant lights. Warm, contemplative, scholarly ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5kiCp-C0WH5TQTTcR6sXiWaekpEKEnZE8UolKV0VXo7SpX6REcUly-v2I_X8rcPczmFLmxeThkF0x1mwBY7IfFCEAnrgPmFPn2Zk1tEw2kSpgZUdLaPlH9bB7kgYUCHUV8OKnDtCb8IULTpyYGsCozpRYZzl--cnHaNg5aSwmbqQO7kcC5j8D2yHMhuQ864NMsmCMJeG-0yYfaYk_mgTt5RMDzT5Q8OlA1YCxbFbVUt6xncoZ1jH0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-surface-container-lowest">
+<span class="font-label-caps text-[10px] text-secondary-fixed uppercase tracking-widest">Scholarly Heart</span>
+<h3 class="font-title-md text-surface-bright mt-1">Memorial Library &amp; Commons</h3>
+<p class="font-body-sm text-body-sm text-surface-variant/90 mt-1">Over 45,000 volumes paired with global digital journal repositories.</p>
+</div>
+</div>
+<!-- Tile 4: Olympic Athletics Track & Aquatic Complex -->
+<div class="md:col-span-4 group rounded-xl overflow-hidden border border-outline-variant/50 relative min-h-[340px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Gleaming 50-meter Olympic aquatic center and adjacent all-weather 400m synthetic running track under the vibrant afternoon Nairobi sky. Crystal blue water reflects contemporary canopy architecture while competitive swimmers train in dedicated lanes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxNbJvMVdiQkxsOZ9G-LvIqTxML2P788RwEk59B4g8wk1UhuoiyxsPNeBOLZ-g5qRnMxtNKNQeVH4lxz6khwArnaYHrXtW2yM2oJlw7RFAhFE2C4wmVHL9RuxK-mhr--_s_FAzmnBupuLaPa3e9umXHAsn3vrFiVCNJcEaBh-Xir_px3oDYbIChQ3Pf2sqMCx1oS6oHQ_pFcey9V0d6WL9Dh9seu7XkYCNTNDQ87n_Fr7YPRgbw1OJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-surface-container-lowest">
+<span class="font-label-caps text-[10px] text-secondary-fixed uppercase tracking-widest">Athletics Hub</span>
+<h3 class="font-title-md text-surface-bright mt-1">Olympic Athletics &amp; Aquatic Complex</h3>
+<p class="font-body-sm text-body-sm text-surface-variant/90 mt-1">World Athletics certified 400m track and FINA-regulation pool.</p>
+</div>
+</div>
+<!-- Tile 5: Outdoor Permaculture & Environmental Learning Pavilion -->
+<div class="md:col-span-4 group rounded-xl overflow-hidden border border-outline-variant/50 relative min-h-[340px] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Organic permaculture garden and experimental open-air environmental pavilion at Amani Academy. Students in field gear inspect solar drip-irrigation systems and indigenous medicinal plants. Surrounded by Karen nature trails and sustainably crafted bamboo pavilions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMGvocCtnWrB1JXYp1Mi49gTTOnQOJ8HtibQRFQy6o-P60yxl3uQ4dPhYT-rkALSMLfIcyPSK4AI0HcPMnYohegSQYI23DNqPZ2xYjhjSi8wdX5GJwaa4lxujepM7PG56ZrXCDrVhWHnNzG-XTE6G8cSKbn-hDIOLfOPCyYPQ2c7O4LgCzpc2rmrTIMg5WDQHUm_bH6nUmWFNJ3Aj94sqGyeGEmzfFfONp5XnyprBwfOyk7r3aSwgw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-surface-container-lowest">
+<span class="font-label-caps text-[10px] text-secondary-fixed uppercase tracking-widest">Ecological Stewardship</span>
+<h3 class="font-title-md text-surface-bright mt-1">Permaculture Learning Pavilion</h3>
+<p class="font-body-sm text-body-sm text-surface-variant/90 mt-1">Hands-on micro-climate restoration, zero-waste composting, and hydrology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. STUDENT LIFE -->
+<section class="py-space-5xl bg-surface-container-low border-y border-outline-variant/30" id="student-life">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-3xl">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest uppercase">Student Co-Curricular Culture</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs">
+            Find your people. Discover your passion.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm">
+            Over 60 student-directed societies, musical ensembles, and athletic clubs nurture camaraderie and lifelong pursuits outside the syllabus.
+          </p>
+</div>
+<div class="mt-4 lg:mt-0 flex gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-lowest text-primary text-xs font-semibold border border-outline-variant/40">
+<span class="material-symbols-outlined text-[15px] text-secondary">groups</span> 60+ Societies
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-lowest text-primary text-xs font-semibold border border-outline-variant/40">
+<span class="material-symbols-outlined text-[15px] text-secondary">public</span> Pan-African Tours
+          </span>
+</div>
+</div>
+<!-- Life Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Item 1: Student Clubs & Geopolitics -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-xs hover:border-secondary transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-2xl">forum</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Model UN &amp; East African Geopolitics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Annual delegation to the UN Gigiri headquarters and diplomatic simulations addressing regional peace, commerce, and climate adaptation.
+          </p>
+</div>
+<!-- Item 2: Rugby & Athletics Academy -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-xs hover:border-secondary transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-2xl">sports_rugby</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Athletics &amp; Rugby Academy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Championship coaching staff, conditioning clinics, and regular inter-school tournaments across East and Southern Africa.
+          </p>
+</div>
+<!-- Item 3: Symphony & African Ensembles -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-xs hover:border-secondary transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-2xl">music_note</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Symphony &amp; Traditional Ensembles</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Merging Western classical repertoire with Kenyan percussion, nyatiti, and marimba orchestrations in semesterly galas.
+          </p>
+</div>
+<!-- Item 4: Drama & Theatre -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-xs hover:border-secondary transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-2xl">theater_comedy</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Drama &amp; Amphitheater Productions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Original staging of African literature, Shakespearean classics, and musical theatre inside our 600-seat amphitheater.
+          </p>
+</div>
+<!-- Item 5: Championship Debate Society -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-xs hover:border-secondary transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-2xl">record_voice_over</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Championship Debate Society</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Ranked nationally in Oxford-style and Karl Popper parliamentary formats, sharpening rhetoric, evidence synthesis, and composure.
+          </p>
+</div>
+<!-- Item 6: Nairobi Community Outreach -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-xs hover:border-secondary transition-all group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-md group-hover:bg-primary-container group-hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Community Impact Across Nairobi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Student-driven literacy mentorship in Kibera, reforestation drives along the Ngong River, and youth robotics workshops.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. INNOVATION & TECHNOLOGY (ATMOSPHERIC DARK FIELD) -->
+<section class="py-space-5xl bg-primary-container text-surface-container-lowest relative overflow-hidden">
+<!-- Subtle brass architectural watermark -->
+<div class="absolute -right-24 -bottom-24 w-96 h-96 border border-secondary/20 rounded-full pointer-events-none"></div>
+<div class="absolute right-12 top-12 w-64 h-64 border border-secondary/10 rounded-full pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-gutter-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-6 space-y-space-lg">
+<span class="font-label-caps text-label-caps text-secondary-fixed tracking-widest uppercase">Pioneering Frontiers</span>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright leading-tight">
+            Preparing students for a world that hasn't been built yet.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+            At Amani, engineering is not an elective; it is a civic imperative. From designing automated drones tracking elephant corridors in the Tsavo ecosystem to coding neural networks that detect early crop blight, our students create deployable technology for the continent.
+          </p>
+<div class="space-y-space-md pt-space-sm">
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-lowest/5 border border-secondary/20">
+<span class="material-symbols-outlined text-secondary-fixed mt-1">neurology</span>
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-container-lowest">Quantum Computing &amp; Applied AI Club</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">High school members experimenting with IBM Qiskit quantum algorithms.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-lowest/5 border border-secondary/20">
+<span class="material-symbols-outlined text-secondary-fixed mt-1">solar_power</span>
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-container-lowest">Kenya Green Energy Incubator</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Rapid prototyping of off-grid solar micro-grids and biomass energy solutions.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-lowest/5 border border-secondary/20">
+<span class="material-symbols-outlined text-secondary-fixed mt-1">verified</span>
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-container-lowest">Student Patent Mentorship Initiative</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Legal and commercial guidance for inventions developed during capstone projects.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-6 py-3 rounded-lg font-title-sm text-title-sm hover:bg-secondary-fixed transition-colors" href="#admissions">
+<span>Discover Innovation</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="relative rounded-xl overflow-hidden border border-secondary/30 shadow-2xl p-2 bg-surface-container-lowest/5">
+<img class="w-full h-[480px] object-cover rounded-lg" data-alt="Secondary students in Karen testing a student-engineered wildlife surveillance drone over open grassy savanna with telemetry data glowing on dual rugged field monitors. A brilliant African sky extends toward distant volcanic hills, capturing intense focus, technological innovation, and wildlife preservation stewardship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANt9jofykQILBOu-VJhfD4NOCjUD1oSfdKOjoYB6y82T6WVFIxF5oTWhB0SoznHtWm2qtHEc7dU8tOePS4-sGpatJqCSzkx6V9uTaYh4o2j5kM9KFOz8nFWOC0WCgLjnkvUMEy1PsNOZv586_S2CfzvIWUvLAbeiUdMXsK4bCaMxvOF4V7h2AStghe1Wue9WfT3OA0kCM-OHBZxq6ah9vtLPz4CDAXYqZMmfEp_5ShMDtPbLNAUjPX"/>
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-lg bg-primary/90 backdrop-blur-md border border-secondary/40 text-surface-container-lowest">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-label-caps text-[10px] text-secondary-fixed">FIELD DEPLOYMENT · TSAVO CORRIDOR</p>
+<p class="font-title-sm text-sm text-surface-bright mt-0.5">Amani Eco-Drone Wildlife Monitoring Fleet</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary/30 text-secondary-fixed text-xs font-mono font-bold">ACTIVE</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. PARENT SECTION & FAQ -->
+<section class="py-space-5xl bg-background" id="parent-portal">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-3xl">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest uppercase">Family Partnership</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs">Parent Resources &amp; Information</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm">
+          Clear, transparent, and responsive communication is the cornerstone of our collaboration with families.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Left: Parent Resource Grid -->
+<div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-lg bg-surface-container-low rounded-xl border border-outline-variant/40 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl">route</span>
+<h4 class="font-title-sm text-title-sm text-primary mt-space-xs">Admissions Roadmap</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Application windows, assessment milestones, and key evaluation dates.</p>
+<a class="text-secondary font-title-sm text-xs mt-3 inline-block hover:underline" href="#admissions">View Roadmap →</a>
+</div>
+<div class="p-space-lg bg-surface-container-low rounded-xl border border-outline-variant/40 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl">payments</span>
+<h4 class="font-title-sm text-title-sm text-primary mt-space-xs">Transparent Fees &amp; Aid</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Comprehensive schedule of tuition, capital levies, and merit scholarships.</p>
+<a class="text-secondary font-title-sm text-xs mt-3 inline-block hover:underline" href="#admissions">Fee Schedules →</a>
+</div>
+<div class="p-space-lg bg-surface-container-low rounded-xl border border-outline-variant/40 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl">calendar_month</span>
+<h4 class="font-title-sm text-title-sm text-primary mt-space-xs">Term Dates &amp; Calendar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Interactive academic schedule, half-term breaks, and parent-teacher galas.</p>
+<a class="text-secondary font-title-sm text-xs mt-3 inline-block hover:underline" href="#admissions">Download 2026/27 Calendar →</a>
+</div>
+<div class="p-space-lg bg-surface-container-low rounded-xl border border-outline-variant/40 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl">directions_bus</span>
+<h4 class="font-title-sm text-title-sm text-primary mt-space-xs">Chaperoned Transport</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">GPS-tracked fleet with vetted wardens serving Westlands, Lavington, Runda, and Karen.</p>
+<a class="text-secondary font-title-sm text-xs mt-3 inline-block hover:underline" href="#admissions">Explore Bus Routes →</a>
+</div>
+</div>
+<!-- Right: FAQ Accordion -->
+<div class="lg:col-span-6 space-y-space-sm">
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/50">
+<h4 class="font-title-sm text-title-sm text-primary flex items-center justify-between cursor-pointer">
+<span>What is the balance between IB and Cambridge curriculums?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs pt-space-xs border-t border-outline-variant/20 leading-relaxed">
+              We offer the Cambridge IGCSE framework during Years 10 and 11, giving students globally recognized foundational depth. In Sixth Form (Years 12–13), students select either the full IB Diploma Programme or Cambridge International A-Levels based on their individual academic aspirations and target universities.
+            </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/50">
+<h4 class="font-title-sm text-title-sm text-primary flex items-center justify-between cursor-pointer">
+<span>How are students supported during university applications?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs pt-space-xs border-t border-outline-variant/20 leading-relaxed">
+              Our dedicated University Guidance Counselling suite initiates one-on-one strategy sessions starting in Year 10. Counselors support SAT/ACT prep, UCAS applications, Common App personal essays, and interview coaching with visiting admissions officers from North America, Europe, and Asia.
+            </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/50">
+<h4 class="font-title-sm text-title-sm text-primary flex items-center justify-between cursor-pointer">
+<span>What pastoral care and safeguarding systems are in place?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs pt-space-xs border-t border-outline-variant/20 leading-relaxed">
+              Every student is assigned a dedicated House Tutor and Pastoral Mentor who oversees wellness and academic progress. We maintain an independent student safeguarding committee, full-time clinical psychologists on campus, and strict adherence to international safeguarding protocols.
+            </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl border border-outline-variant/50">
+<h4 class="font-title-sm text-title-sm text-primary flex items-center justify-between cursor-pointer">
+<span>Are day and flexible boarding options available?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs pt-space-xs border-t border-outline-variant/20 leading-relaxed">
+              Amani offers Day, Weekly Boarding (Monday through Friday), and Full Boarding within our contemporary residential houses in the Karen estate, providing structured evening study halls and full weekend excursion programs.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. NEWS & STORIES -->
+<section class="py-space-5xl bg-surface-container-low border-t border-outline-variant/30" id="news">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest uppercase">The Amani Chronicle</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs">News &amp; Campus Stories</h2>
+</div>
+<a class="mt-4 md:mt-0 inline-flex items-center text-primary font-title-sm text-sm hover:text-secondary transition-colors" href="#news">
+<span>Read All Chronicles</span>
+<span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Story 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Excited group of African secondary robotics students in Kigali holding an gold championship trophy surrounded by high-tech automated micro-rovers. Bright celebratory stage lighting, authentic emotion, joy, and academic triumph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQhizJEfOeaPTF7qC7lytKOcvfY0NEpGCoKoB9fBDC3BV7VzdsrEAo1QBWIcfubrJHx4GLTIJaHtvTc7byWJKhJ3LocMQN8mzz5REAHOlYhijdVaoGF0xGIJkD_Mfy7_R5NY1wU85VuZ_X0JkBvssA0Uz_DHBUYemt7i_hSU3qh5kB4Hj48GulmViso3hD6b6iyXep_cpgNg8XhQoOJ7lTFnC_Kjk4nEpmJDQIg6eucx7PSthpNNtK"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-[10px] text-secondary font-bold">MARCH 2025 · STEM EXCELLENCE</span>
+<h3 class="font-title-sm text-title-sm text-primary mt-1 group-hover:text-secondary transition-colors">
+                Students win regional robotics challenge in Kigali
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                The senior coding delegation clinched 1st place among 45 Pan-African institutions with their automated search-and-rescue rover.
+              </p>
+</div>
+<span class="text-xs text-secondary font-semibold mt-4 inline-flex items-center">Read article →</span>
+</div>
+</article>
+<!-- Story 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Lively cultural festival on Amani campus with students in vibrant traditional attire from Kenya, Nigeria, South Africa, and Ethiopia performing traditional dance on an outdoor pavilion under afternoon Nairobi sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxnUNVRP-3JYmSVgaOL_7DeEsYiaDzhbcXCEH9GD-fe6t-KY3GkCJNK88igTHHOc8d5a4MsaUwUvy4wVM0ok19jT2iRepAOP2IsydOZbYKUYt6ESmsNl4K8IbjgWTGcxViYqP9mJLEiwtT70NG0xEUn4CuOxaQlfjSiikBNAA5f9bmynXplcS00JY3ctgilHgVZxSIID1Ex-UFYqWbwzFvw0k74LjmetVRgRj-tgSMnOrO73NcpGpD"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-[10px] text-secondary font-bold">FEBRUARY 2025 · ARTS &amp; CULTURE</span>
+<h3 class="font-title-sm text-title-sm text-primary mt-1 group-hover:text-secondary transition-colors">
+                A week of creativity, culture, and Pan-African expression
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Annual Heritage Week brought visiting poets, choreographers, and historians to lead immersive workshops with students.
+              </p>
+</div>
+<span class="text-xs text-secondary font-semibold mt-4 inline-flex items-center">Read article →</span>
+</div>
+</article>
+<!-- Story 3 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of two graduating Sixth Form scholars in sharp collegiate blazers standing proudly in the Karen library commons holding university acceptance folders from Oxford and Stanford, smiling with warm academic confidence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc6v7yjgGPh5RLJ-Kvdx6H7jOENiOto9Ek26C6d99aywWEYjTwmmP1z1ObEAIIKsBQKWiSVYI23yMraEK1PIeGH0iEzUlFYN0sLJp6lnq9WLblloc_ci8n-GU9bPx9TzbHsYGXqK_eMYCYgmUrfGFFi5vUKeHQ7yQfvCa7N-b_tyZcrsYZsSKXm6kMZMva-zTCYz2lKjOeg_BoJDX1RHpC4Y6VoNLhXpJC8sEKniYCvbHWmq3PbmWE"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-[10px] text-secondary font-bold">JANUARY 2025 · UNIVERSITY PLACEMENT</span>
+<h3 class="font-title-sm text-title-sm text-primary mt-1 group-hover:text-secondary transition-colors">
+                Meet our graduating class: Destinations from Stanford to Oxford
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Early admissions results confirm admissions to world-renowned programs in engineering, jurisprudence, and medicine.
+              </p>
+</div>
+<span class="text-xs text-secondary font-semibold mt-4 inline-flex items-center">Read article →</span>
+</div>
+</article>
+<!-- Story 4 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Students and environmental science teachers installing a solar array alongside an ecological rainwater harvesting pond on campus, working together with tool belts and schematic blueprints under a bright sunny sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC69hTDIn3v1d0C13tTER26DTGvNoi3Prgsl3mUWjCOQ18olCg40Rnd8xlz-0FcPYh5hmFcAKUI3ZX9FYmwfyRxwpGCp7AMAL-6xHw17XqAGmN9W7-S9GWWOsoIInIBeXn-Xf5w3fxY8wbpg1hpn7pBLsYn_6sKKahYiAvc3QsQ9eTeYfkF3wDXM-1jO672mlIbA_bMxs0TWOousKpP4Ct2wfxG2PTzK8PazXpq29vfIh_aOmOalL0"/>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-[10px] text-secondary font-bold">JANUARY 2025 · SUSTAINABILITY</span>
+<h3 class="font-title-sm text-title-sm text-primary mt-1 group-hover:text-secondary transition-colors">
+                Amani launches student-led solar &amp; environmental initiative
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                The Eco-Council commissioned a 120kW rooftop solar grid designed entirely through Year 12 physics capstone investigations.
+              </p>
+</div>
+<span class="text-xs text-secondary font-semibold mt-4 inline-flex items-center">Read article →</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 10. ADMISSIONS CTA (CINEMATIC BANNER) -->
+<section class="py-space-5xl relative overflow-hidden bg-primary-container text-surface-container-lowest border-y-2 border-secondary/30" id="admissions">
+<div class="absolute inset-0 opacity-15 pointer-events-none">
+<div class="w-full h-full bg-[radial-gradient(#C29B38_1px,transparent_1px)] [background-size:24px_24px]"></div>
+</div>
+<div class="max-w-5xl mx-auto px-gutter-desktop text-center relative z-10 space-y-space-lg">
+<div class="inline-flex items-center gap-space-xs px-4 py-1.5 rounded-full bg-surface-container-lowest/10 border border-secondary/30">
+<span class="font-label-caps text-label-caps text-secondary-fixed tracking-widest uppercase">Admissions Enquiries 2026/2027</span>
+</div>
+<h2 class="font-display-hero text-headline-lg lg:text-display-hero text-surface-bright leading-tight">
+        Your child's next chapter starts here.
+      </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto leading-relaxed">
+        Come experience Amani International Academy for yourself. Tours run every Tuesday and Thursday morning across our Karen estate. Meet our faculty, explore the laboratories, and speak directly with our students.
+      </p>
+<div class="pt-space-md flex flex-wrap justify-center items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-title-sm text-title-sm hover:bg-secondary-fixed transition-all shadow-lg hover:shadow-xl group" href="mailto:admissions@amaniacademy.sc.ke">
+<span>Book a School Tour</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">calendar_month</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-7 py-4 rounded-lg border border-secondary/50 text-surface-bright font-title-sm text-title-sm hover:bg-surface-container-lowest/10 transition-colors" href="admission.html#inquiry-form">
+<span>Start an Application</span>
+<span class="material-symbols-outlined text-lg">edit_note</span>
+</a>
+</div>
+<div class="pt-space-xl border-t border-secondary/20 flex flex-wrap justify-center items-center gap-x-10 gap-y-4 text-xs font-label-caps text-on-primary-container tracking-wider">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm">schedule</span> Tours: Tue &amp; Thu · 09:30 EAT</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm">phone</span> +254 (0) 20 890 0000</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-sm">mail</span> admissions@amaniacademy.sc.ke</span>
+</div>
+</div>
+</section>
+<!-- 11. INSTITUTIONAL FOOTER -->
+<div id="footer-placeholder"></div>
+
+<script src="main.js"></script>
+</body></html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academics | Amani International Academy Nairobi</title>
+<!-- Fonts: Newsreader (Editorial Serif) & Manrope (Modern Geometric Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<!-- Google Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with forms & container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Verbatim Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#c7ebd4",
+            "tertiary-container": "#302d22",
+            "background": "#f3fcf5",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#251a00",
+            "on-primary-fixed": "#002113",
+            "on-secondary-container": "#765900",
+            "on-surface": "#151d19",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#ccc6b6",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#2a322e",
+            "inverse-on-surface": "#eaf3ec",
+            "surface-container": "#e7f0e9",
+            "on-background": "#151d19",
+            "tertiary": "#1b180e",
+            "on-primary-container": "#7a9c88",
+            "outline": "#727973",
+            "on-tertiary-fixed-variant": "#4a473a",
+            "primary-container": "#133324",
+            "tertiary-fixed": "#e9e2d1",
+            "surface": "#f3fcf5",
+            "secondary-container": "#fed269",
+            "primary": "#001e11",
+            "error": "#ba1a1a",
+            "secondary": "#775a00",
+            "on-tertiary-container": "#9a9485",
+            "surface-tint": "#456554",
+            "surface-container-low": "#edf6ef",
+            "surface-dim": "#d3dcd6",
+            "surface-container-highest": "#dce5de",
+            "surface-bright": "#f3fcf5",
+            "on-primary-fixed-variant": "#2e4d3d",
+            "on-surface-variant": "#424844",
+            "inverse-primary": "#abcfb9",
+            "on-tertiary-fixed": "#1e1c11",
+            "secondary-fixed": "#ffdf99",
+            "on-primary": "#ffffff",
+            "primary-fixed-dim": "#abcfb9",
+            "surface-variant": "#dce5de",
+            "outline-variant": "#c1c8c2",
+            "on-secondary-fixed-variant": "#5a4300",
+            "surface-container-high": "#e2eae4",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#ecc15a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-5xl": "8rem",
+            "space-3xs": "0.125rem",
+            "space-sm": "0.75rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "gutter-desktop": "2.5rem",
+            "margin-tablet": "2.5rem",
+            "gutter-tablet": "1.5rem",
+            "space-2xs": "0.25rem",
+            "margin-desktop": "5rem",
+            "space-md": "1rem",
+            "space-xs": "0.5rem",
+            "space-4xl": "6rem",
+            "space-2xl": "3rem",
+            "gutter-mobile": "1rem",
+            "space-3xl": "4rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Newsreader", "serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "title-sm": ["Manrope", "sans-serif"],
+            "title-md": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "label-caps": ["Manrope", "sans-serif"],
+            "display-hero": ["Newsreader", "serif"],
+            "headline-sm": ["Newsreader", "serif"],
+            "label-md": ["Manrope", "sans-serif"],
+            "quote-editorial": ["Newsreader", "serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "display-hero-mobile": ["Newsreader", "serif"]
+          },
+          "fontSize": {
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "title-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "title-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "quote-editorial": ["22px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .academic-shadow {
+      box-shadow: 0 16px 36px -12px rgba(11, 32, 22, 0.08), 0 4px 12px -4px rgba(11, 32, 22, 0.03);
+    }
+    .brass-border-subtle {
+      border-color: rgba(194, 155, 56, 0.25);
+    }
+  </style>
+  <script src="navigation.js"></script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed font-body-md text-body-md">
+<!-- Shared Navigation -->
+<div id="nav-placeholder"></div>
+
+<script>
+  fetch("nav.html")
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("nav-placeholder").innerHTML = html;
+      window.dispatchEvent(new CustomEvent("amaniNavLoaded"));
+    });
+</script>
+<!-- =========================================================================
+       2. HERO SECTION: Intellectual Rigour & Editorial Prologue
+       ========================================================================= -->
+<section class="relative pt-space-2xl pb-space-3xl overflow-hidden border-b border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<!-- Category Tag & Sub-deck -->
+<div class="flex items-center gap-2.5 mb-space-sm">
+<span class="h-px w-8 bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em]">Academic Framework &amp; Pedagogy</span>
+</div>
+<!-- Main Asymmetric Grid Hero Header -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-end mb-space-2xl">
+<div class="lg:col-span-8">
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight max-w-4xl">
+            Intellectual Rigour. <br class="hidden sm:inline"/>
+<span class="italic font-normal font-quote-editorial text-secondary">Pan-African Perspective.</span> <br/>
+            Global Fluency.
+          </h1>
+</div>
+<div class="lg:col-span-4 pb-2">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed border-l-2 border-secondary/40 pl-space-md">
+            A sequential, transformative academic framework from Early Years to Sixth Form, synthesizing International Baccalaureate (IB) standards and Cambridge International curricula with African socio-economic inquiry.
+          </p>
+</div>
+</div>
+<!-- Hero Visual Composition with STEAM Robotics / Lab Context -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-2xl">
+<!-- Main Feature Frame -->
+<div class="lg:col-span-8 relative rounded overflow-hidden academic-shadow border border-outline-variant/30 bg-surface-container-low group">
+<img alt="Amani Academy Robotics Lab" class="w-full h-[420px] md:h-[480px] object-cover transition-transform duration-700 group-hover:scale-[1.01]" data-alt="In an airy, naturally lit high-end STEM laboratory in Nairobi, enthusiastic secondary students collaborate on an articulated robotic arm and breadboard circuit with laptop schematics. Soft daylight washes through floor-to-ceiling windows overlooking indigenous Karen greenery. The warm academic ambience highlights rich wood workbenches, delicate brass electrical components, and subtle forest green Academy polo uniforms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0pnf7UtZcv92qXD62m6G8U9g2hkUYkB8gV63ZilmHolQ9nl1FxhPzKIwwVTU3gs_S3NDh6t4CUI_4v6UyOYtBprMF8YW9KtXxgYVu3F8j48X9sUNIGBMBpG7fbh-kJmTwehnQM3dPfxN7xvm1p4wiCmDkFdZI7IYdrf8wGCblhYnd7ge3E2mu_-wgLU2wh2Zeu4VLc4wPSBctZ1Q7u4IViDEitCLz8tydvN8Lcgui6Ya4QzdMUNMl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/85 via-primary-container/20 to-transparent flex flex-col justify-end p-space-lg md:p-space-xl">
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider mb-1">Applied Innovation</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium">The Turing-Wangari STEAM Pavilion</h3>
+<p class="font-body-sm text-body-sm text-surface-variant/90 max-w-xl mt-1">Cross-pollinating electrical engineering, environmental sensor telemetry, and computational modeling across both IGCSE and IB Diploma tracks.</p>
+</div>
+</div>
+<!-- Editorial Metric Highlight Stack -->
+<div class="lg:col-span-4 flex flex-col justify-between gap-4">
+<!-- Metric Card 1 -->
+<div class="bg-surface-container-low border border-outline-variant/40 rounded p-space-lg academic-shadow flex flex-col justify-center flex-1">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-display-hero text-headline-lg text-primary font-normal">38.4</span>
+<span class="font-label-caps text-label-caps text-secondary border border-secondary/30 px-2 py-0.5 rounded">IB Average</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global average sits at 30.2. Over 42% of Amani candidates achieve 40+ points, rivaling the foremost collegiate schools worldwide.</p>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-primary-container text-surface-container-lowest rounded p-space-lg academic-shadow flex flex-col justify-center flex-1 border border-secondary/30">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-display-hero text-headline-lg text-secondary-fixed font-normal">100%</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed/90 bg-primary/60 px-2 py-0.5 rounded">Matriculation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">Dual curriculum options (Cambridge A-Level &amp; IB Diploma) ensure unconditional admission into Tier-1 global universities.</p>
+</div>
+<!-- Metric Card 3 -->
+<div class="bg-surface-container-low border border-outline-variant/40 rounded p-space-lg academic-shadow flex items-center justify-between">
+<div>
+<span class="font-title-md text-title-md text-primary block">1 : 12 Faculty Ratio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oxford, Harvard &amp; Nairobi faculty oversight</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="school">school</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       3. THE CONTINUUM OF LEARNING: Four Divisions
+       ========================================================================= -->
+<section class="py-space-4xl bg-surface border-b border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<!-- Section Header -->
+<div class="max-w-3xl mb-space-2xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em] block mb-2">Sequential Academic Pedagogy</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">The Four Academic Divisions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3 leading-relaxed">
+          From early childhood discovery on our 45-acre Karen campus to rigorous pre-university defense, each developmental horizon is anchored in academic vitality and pastoral care.
+        </p>
+</div>
+<!-- 4-Division Editorial Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Division 01: Early Years -->
+<article class="bg-surface-container-lowest border border-outline-variant/40 rounded p-space-xl transition-all duration-200 hover:border-secondary/50 group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-headline-md text-secondary font-normal italic">01</span>
+<span class="font-label-caps text-label-caps text-primary bg-surface-container-high px-2.5 py-1 rounded">Ages 2 – 5</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors duration-150">Early Years Foundation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-space-md">
+              Reggio Emilia-inspired inquiry situated within Nairobi’s natural ecology. Children engage in bilingual immersion, sensory numeracy, and structured phonetic exploration through tactile, forest-school methodologies.
+            </p>
+<ul class="space-y-2 border-t border-outline-variant/20 pt-space-md text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Bilingual Immersion (English &amp; Kiswahili conversational fluency)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Outdoor sensory botanic lab &amp; animal husbandry observations</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Foundational phonics &amp; Singapore Math heuristics</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">Early Years Syllabus</span>
+<a class="font-label-md text-label-md text-primary group-hover:text-secondary inline-flex items-center gap-1" href="#dossier">
+              Read Division Prospectus <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Division 02: Primary School -->
+<article class="bg-surface-container-lowest border border-outline-variant/40 rounded p-space-xl transition-all duration-200 hover:border-secondary/50 group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-headline-md text-secondary font-normal italic">02</span>
+<span class="font-label-caps text-label-caps text-primary bg-surface-container-high px-2.5 py-1 rounded">Years 1 – 6</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors duration-150">Junior School &amp; Cambridge Primary</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-space-md">
+              Structured academic mastery anchored by the Cambridge International Primary Curriculum. Rigorous literacy and mathematical foundations are enriched with hands-on coding, African historiography, and instrumental music.
+            </p>
+<ul class="space-y-2 border-t border-outline-variant/20 pt-space-md text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Cambridge Checkpoint English, Mathematics &amp; Science</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Modern Foreign Languages: French or Mandarin from Year 3</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Computational Thinking &amp; introductory Python algorithmic play</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">Junior School Syllabus</span>
+<a class="font-label-md text-label-md text-primary group-hover:text-secondary inline-flex items-center gap-1" href="#dossier">
+              Read Division Prospectus <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Division 03: Middle & Secondary School -->
+<article class="bg-surface-container-lowest border border-outline-variant/40 rounded p-space-xl transition-all duration-200 hover:border-secondary/50 group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-headline-md text-secondary font-normal italic">03</span>
+<span class="font-label-caps text-label-caps text-primary bg-surface-container-high px-2.5 py-1 rounded">Years 7 – 11</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors duration-150">Middle School &amp; Cambridge IGCSE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-space-md">
+              Intensive preparation culminating in the Cambridge IGCSE examinations. Emphasizes empirical scientific laboratory inquiry, formal debate through East African Model United Nations, and socio-economic field research.
+            </p>
+<ul class="space-y-2 border-t border-outline-variant/20 pt-space-md text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Broad selection of 18+ IGCSE disciplines across STEM &amp; Humanities</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Model UN &amp; Pan-African parliamentary argumentation seminars</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Field-based Rift Valley geography &amp; ecology thesis papers</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">IGCSE Course Catalogue</span>
+<a class="font-label-md text-label-md text-primary group-hover:text-secondary inline-flex items-center gap-1" href="#dossier">
+              Read Division Prospectus <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Division 04: Sixth Form & Senior College -->
+<article class="bg-primary-container text-surface-container-lowest rounded p-space-xl border border-secondary/30 academic-shadow group flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-headline-md text-secondary-fixed font-normal italic">04</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed bg-primary/60 border border-secondary/30 px-2.5 py-1 rounded">Years 12 – 13 (Sixth Form)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface group-hover:text-secondary-fixed transition-colors duration-150">Senior College: IB Diploma &amp; A-Levels</h3>
+<p class="font-body-md text-body-md text-on-primary-container mt-2 mb-space-md">
+              A pre-eminent collegiate environment offering students a tailored choice between the full International Baccalaureate (IB) Diploma Programme or Cambridge International A-Levels. Includes rigorous capstone research dissertations.
+            </p>
+<ul class="space-y-2 border-t border-secondary/20 pt-space-md text-body-sm text-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]" data-icon="verified">verified</span>
+<span>IB DP Extended Essay (4,000 words) &amp; Theory of Knowledge (TOK)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]" data-icon="verified">verified</span>
+<span>Cambridge Advanced A-Level pathways in Higher Math &amp; Sciences</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]" data-icon="verified">verified</span>
+<span>Dedicated Oxbridge &amp; Ivy League university counseling syndicate</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-secondary/20 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary-fixed/70">Sixth Form Dossier</span>
+<a class="font-label-md text-label-md text-secondary-fixed hover:text-white inline-flex items-center gap-1" href="#dossier">
+              Explore Sixth Form Honors <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       4. ACADEMIC PILLARS & FACULTY LEADERSHIP
+       ========================================================================= -->
+<section class="py-space-4xl bg-background border-b border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-4">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em] block mb-2">Scholarly Calibre</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Eminent Faculty &amp; Pillars of Instruction</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Over 78% of Amani Senior Faculty hold doctoral or master's credentials from the world's most distinguished research institutes.
+        </p>
+</div>
+<!-- 3 Key Instructional Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-3xl">
+<div class="p-space-lg bg-surface-container-low border border-outline-variant/30 rounded">
+<div class="w-12 h-12 rounded bg-primary text-secondary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl" data-icon="biotech">biotech</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-2">Computational &amp; Applied STEAM</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            From algorithmic robotics in Grade 6 to genetic marker modeling in Year 13, our dedicated Maker studios bridge theoretical physics with physical prototyping.
+          </p>
+</div>
+<div class="p-space-lg bg-surface-container-low border border-outline-variant/30 rounded">
+<div class="w-12 h-12 rounded bg-primary text-secondary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl" data-icon="translate">translate</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-2">Polyglot &amp; Dialectic Mastery</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Students cultivate linguistic mastery across English, Kiswahili, French, and Mandarin, grounding communication in cross-cultural diplomacy and literary analysis.
+          </p>
+</div>
+<div class="p-space-lg bg-surface-container-low border border-outline-variant/30 rounded">
+<div class="w-12 h-12 rounded bg-primary text-secondary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl" data-icon="public">public</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mb-2">Pan-African Geopolitics</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Curricular integration of African post-colonial governance, developmental economics, and ecological conservation alongside standard Euro-American historiography.
+          </p>
+</div>
+</div>
+<!-- Faculty Spotlight Rows -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded p-space-xl">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-lg">Faculty Deans &amp; Research Chairs</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg divide-y md:divide-y-0 md:divide-x divide-outline-variant/30">
+<!-- Faculty 1 -->
+<div class="pt-4 md:pt-0 md:px-4 first:pl-0">
+<div class="flex items-center gap-3.5 mb-3">
+<img alt="Dr. Wanjiku Muthoni" class="w-14 h-14 rounded object-cover border border-secondary/30" data-alt="Editorial portrait of a distinguished African female Dean of Natural Sciences in her mid-forties with glasses, smiling warmly in a Karen academy laboratory. Soft ambient library lighting, natural depth of field, forest green bespoke academic attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARNma6pt0EUs_bFt2xOpTiT3W9KRMt0lvLw8Mszb9ZUx9Tz3ga_ycr9bgnpkkz-8SZNq0jAdxdrAbXH-datDmW4uDmIlcEUfyglZxS5I6yrO1RRM8PJwcz-FY35ZkX5IvnHlrsH2czFgVwl2Lw7S6H3ry0fxP03auSHPqVhak13xvWhEzCfXP783CxAWrNIPH9SSDjFkX5vcNDODBcziTdpXFGwa8Sz1TZCkmSqYMqEeH_BaqNszH7"/>
+<div>
+<h5 class="font-title-sm text-title-sm text-primary">Dr. Wanjiku Muthoni</h5>
+<span class="font-label-caps text-label-caps text-secondary block">Dean of Natural Sciences</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              DPhil in Molecular Biophysics from University of Oxford. Former Postdoctoral Fellow at Cambridge; overseer of the Amani Biotech Laboratory.
+            </p>
+</div>
+<!-- Faculty 2 -->
+<div class="pt-4 md:pt-0 md:px-4">
+<div class="flex items-center gap-3.5 mb-3">
+<img alt="Dr. Kwame Achebe" class="w-14 h-14 rounded object-cover border border-secondary/30" data-alt="Editorial portrait of a sharp, thoughtful African male Professor of Economics and Social Inquiries in his late thirties wearing a linen blazer in a tranquil sunlit Karen library setting. High contrast, warm ivory tones and sophisticated collegiate dignity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCPwMHuiMhRIIzammDfMFunK0XEOaYoJa4NXLLUX19VjCfmZeZ1WfUzi98VbxSfXZoTpGH6Hn8J6xK5cROcCQR3Wdw5xQrgT1X8K1vX5I0j3AVEHZvhdRwkhcs6Y9OFj88EGu7wfjOFAD8-eMMJEp75KCfywPoq4P-cTKLP6ueDJ7qHHkraakJqDMg3EabkuPyGY3g1ZGKZDc4sW2BYIGlmqjLk_deOjlmHRXhG3O0VV-tr1ZeTdoP"/>
+<div>
+<h5 class="font-title-sm text-title-sm text-primary">Dr. Kwame Achebe</h5>
+<span class="font-label-caps text-label-caps text-secondary block">Chair of Global Economics &amp; TOK</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              PhD in International Development from Harvard University. Senior Consultant for UN Habitat Nairobi; leads the IB Extended Essay advisory guild.
+            </p>
+</div>
+<!-- Faculty 3 -->
+<div class="pt-4 md:pt-0 md:px-4 last:pr-0">
+<div class="flex items-center gap-3.5 mb-3">
+<img alt="Mrs. Alistair Vance" class="w-14 h-14 rounded object-cover border border-secondary/30" data-alt="Editorial close-up portrait of an elegant senior female scholar in literature wearing tortoiseshell glasses, situated among dark oak bookshelves filled with leatherbound academic volumes. Refined editorial photography with gentle golden hour lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1-zfLaV_qTvgxhEajxsFVJtAlwutEfY46bkXNWoQ-WmxbJRX8bo4pDjzaI9tqt5Whn38nwUMY8DdGrezYZo16PiDb197eOeR8IOcIy7dzafR6QNj4M8Z_9oe6QgTwXgQbBK-wbcXHy_3cPCz8IVXXeU5SG7XK5FGa7HUAIY4sAZBOW5L-FsXOfMRxyBkVwMITCPEOsjcGiVWzQ2TSiUtQIFQD3DJ6bFRXPffgUf8e2mbpWTirVGzf"/>
+<div>
+<h5 class="font-title-sm text-title-sm text-primary">Mrs. Claire Vance, M.Ed</h5>
+<span class="font-label-caps text-label-caps text-secondary block">Head of Sixth Form &amp; Matriculation</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              MA in Comparative Literature from University of Cape Town. 18 years mentoring African scholars into Ivy League and Russell Group institutions.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       5. GLOBAL UNIVERSITY MATRICULATION & OUTCOMES
+       ========================================================================= -->
+<section class="py-space-4xl bg-surface border-b border-outline-variant/30">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left: Editorial Narrative & Statistics -->
+<div class="lg:col-span-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em] block mb-2">Global Trajectories</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-md">
+            Where Amani Scholars <br/>
+<span class="italic font-quote-editorial text-secondary">Ascend to Lead.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-lg">
+            Our graduates embody intellectual confidence and moral leadership. With personalized college counseling commencing in Year 10, Amani students matriculate into premier universities with substantial merit scholarships and leadership endowments.
+          </p>
+<!-- List with Indices (Design System List Pattern) -->
+<div class="space-y-3 mb-space-xl">
+<div class="flex items-center justify-between p-3 rounded bg-surface-container-low border-b border-outline-variant/30">
+<span class="font-title-sm text-title-sm text-primary">Russell Group &amp; Oxbridge Acceptance</span>
+<span class="font-headline-sm text-secondary font-quote-editorial">94%</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded bg-surface-container-low border-b border-outline-variant/30">
+<span class="font-title-sm text-title-sm text-primary">US Ivy League &amp; Top 30 Colleges</span>
+<span class="font-headline-sm text-secondary font-quote-editorial">82%</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded bg-surface-container-low border-b border-outline-variant/30">
+<span class="font-title-sm text-title-sm text-primary">Cumulative Academic Scholarships (2024)</span>
+<span class="font-headline-sm text-secondary font-quote-editorial">$4.8M+</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 font-label-md text-label-md text-surface-container-lowest bg-primary-container rounded hover:bg-primary transition-colors duration-150" href="admission.html#inquiry-form">
+<span>Explore Admissions Counseling</span>
+<span class="material-symbols-outlined text-base" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Right: University Destination Badge Wall & Testimonial -->
+<div class="lg:col-span-6 bg-surface-container-lowest border border-outline-variant/40 rounded p-space-xl academic-shadow">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider block mb-space-md">Frequent Matriculation Destinations</span>
+<!-- Institutions Matrix -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-space-xl text-center">
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">Oxford</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">Stanford</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">Cambridge</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">Harvard</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">MIT</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">Cape Town</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">Ashesi</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded border border-outline-variant/20 flex items-center justify-center">
+<span class="font-title-sm text-title-sm text-primary tracking-tight">McGill</span>
+</div>
+</div>
+<!-- Alumni Spotlight Quote -->
+<div class="border-l-2 border-secondary pl-space-md italic font-quote-editorial text-quote-editorial text-primary">
+            “The academic rigor of the Amani IB Diploma Programme did not merely prepare me for MIT’s engineering coursework; it instilled an enduring ethical responsibility to apply technological ingenuity to African water infrastructure.”
+          </div>
+<div class="mt-space-sm pl-space-md flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-primary">Tendai Ndlovu</span>
+<span class="font-label-caps text-label-caps text-secondary">Class of '22 · MIT Robertson Fellow</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       6. CURRICULUM DOSSIER & TOUR CONSULTATION CTA
+       ========================================================================= -->
+<section class="py-space-4xl bg-primary-container text-surface-container-lowest border-b border-secondary/20" id="dossier">
+<div class="w-full max-w-7xl mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-8">
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-[0.14em] block mb-2">Academic Enrolment 2025–2026</span>
+<h2 class="font-headline-lg text-headline-lg text-surface tracking-tight mb-space-md">
+            Download the Comprehensive Academic Dossier &amp; Syllabus Guide
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed mb-space-xl">
+            Review detailed course syllabi, laboratory equipment registers, faculty bios, examination histories, and matriculation records across both Cambridge and IB pathways.
+          </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-6 py-3 font-label-md text-label-md text-primary bg-secondary-fixed hover:bg-white rounded transition-colors duration-150 shadow-sm font-semibold" href="#dossier">
+<span class="material-symbols-outlined text-[20px]" data-icon="download">download</span>
+<span>Explore Academic Dossier</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3 font-label-md text-label-md text-surface-container-lowest border border-secondary/40 hover:bg-surface-container-lowest/10 rounded transition-colors duration-150" href="book_tour.html" id="consultation">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_today">calendar_today</span>
+<span>Book Academic Tour in Karen</span>
+</a>
+</div>
+</div>
+<!-- Accreditation Seal Plaque -->
+<div class="lg:col-span-4 bg-primary/40 border border-secondary/30 rounded p-space-lg flex flex-col items-center text-center">
+<img alt="Amani Academy Crest" class="h-20 w-auto object-contain mb-space-md opacity-95" src="https://lh3.googleusercontent.com/aida/AEtjO1WsFf37w9E7KYy7t8mv7gz4427dheZn4JGrFx6ZMGEZLEvYwwGMZeCBehyhSZ_a6JGvyH82QICqzHZoL7yFFhT8mOh2dOwawarvr3v7WhPyUsKfZIV2cs1KMlr-GTG6vuHFZOmJzsjr5Pnefz5E1v71RZcwylHBOFrXKaxFNMMB7jybNXHkpgrgyLrWVUYmmwmgdtHQiF0FoopCbIO0bcy5JhNv42_GPzEXCGSCBxAMuZBkDGMNNzDlSms"/>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-serif">Accredited &amp; Authorized</span>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1 mb-space-md">
+            Fully authorized IB World School (PYP, MYP, DP) and Cambridge International Centre (KE084). Council of International Schools (CIS) Member.
+          </p>
+<div class="flex items-center gap-4 text-xs tracking-wider text-secondary-fixed uppercase font-label-caps">
+<span>IB World School</span>
+<span>·</span>
+<span>Cambridge Int.</span>
+<span>·</span>
+<span>CIS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. GLOBAL INSTITUTIONAL FOOTER (Shared Component JSON Blueprint) -->
+<div id="footer-placeholder"></div>
+
+<script>
+  // Load shared footer
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
+
+<script src="main.js"></script>
+</body></html>
